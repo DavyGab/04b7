@@ -2041,7 +2041,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 
 .navbar .nav li {
 	float: left;
-	padding: 5px;
+	padding: 8px;
 }
 
 .navbar .nav li a {
@@ -2056,7 +2056,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	color: rgba(255, 255, 255, 0.75);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	font-weight: 200;
+	font-weight: bolder;
 }
 
 .navbar > .container .navbar-brand,
