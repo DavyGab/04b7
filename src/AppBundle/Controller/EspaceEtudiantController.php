@@ -19,8 +19,12 @@ class EspaceEtudiantController extends Controller
             $em = $this->getDoctrine()->getManager();
             $em->persist($utilisateur);
             $em->flush();
+
+            $request->getSession()->getFlashBag()
+                ->add('success',
+                    'Vos informations ont été enregistrées. Nous vous contacterons très vite.');
         }
-        
+
         return $this->render('AppBundle:EspaceEtudiant:index.html.twig', array(
             'form' => $form->createView()
         ));

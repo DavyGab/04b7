@@ -258,7 +258,7 @@ h4 {
 
 /*----------------------------------------------------------------------------------------
 						FORM STYLES
------------------------------------------------------------------------------------------*/
+
 
 form {
 	border-top: 1px solid rgba(0, 0, 0, 0.07);
@@ -384,7 +384,7 @@ textarea.form-control {
 form button {
 	margin-top: 40px;
 }
-
+*/
 form label {
 	display: block;
 	font-size: 14px;
@@ -392,7 +392,7 @@ form label {
 	position: relative;
 	margin: 0;
 }
-
+/*
 form label.error {
 	background: #e44646;
 	color: #fff;
@@ -549,7 +549,7 @@ form.line-form.five-fields button{
 		border-radius:0;
 	}
 }
-
+-----------------------------------------------------------------------------------------*/
 
 /*----------------------------------------------------------------------------------------
 						DATA LIST STYLE
@@ -3490,6 +3490,11 @@ ul.posts-line .post .title {
 .ten-padding {
 	padding-top: 10px;
 	padding-bottom: 10px;
+}
+
+.twenty-padding {
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 .text-ee {

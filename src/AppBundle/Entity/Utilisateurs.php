@@ -4,6 +4,8 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Component\Validator\Constraints as Assert;
+
 
 /**
  * Utilisateurs
@@ -62,7 +64,11 @@ class Utilisateurs
     /**
      * @var string
      *
-     * @ORM\Column(name="email", type="string", length=255, unique=true)
+     * @ORM\Column(name="email", type="string", length=255)
+     * @Assert\Email(
+     *     message = "L'email '{{ value }}' n'est pas valide.",
+     *     checkMX = true
+     * )
      */
     private $email;
 
@@ -70,6 +76,11 @@ class Utilisateurs
      * @var int
      *
      * @ORM\Column(name="code_postal", type="integer", nullable=true)
+     * @Assert\Length(
+     *      min = 5,
+     *      max = 5,
+     *     exactMessage = "Le code postal n'est pas valide."
+     * )
      */
     private $codePostal;
 
@@ -84,6 +95,10 @@ class Utilisateurs
      * @var string
      *
      * @ORM\Column(name="telephone", type="string", length=12, nullable=true)
+     * @Assert\Regex(
+     *     pattern="#^(?:0|\(?\+33\)?\s?|0033\s?)[1-79](?:[\.\-\s]?\d\d){4}$#",
+     *     message="Le numéro de téléphone n'est pas valide."
+     * )
      */
     private $telephone;
 

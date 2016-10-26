@@ -17,7 +17,7 @@ class UtilisateursType extends AbstractType
             ->add('prenom')
             ->add('nom')
             ->add('email')
-            ->add('codePostal')
+            ->add('codePostal', 'text')
             ->add('ville')
             ->add('telephone')
             ->add('ecole')

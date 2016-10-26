@@ -16,9 +16,91 @@
             <h3 class="text-ee2 zero-bottom">Remplis les champs ci-dessous et tu seras contacté dès que possible</h3>
         </div>
     </section>
-    <div class="well">
-        {{ form(form) }}
-    </div>
+    <section class="zero-padding">
+        {% for type, messages in app.session.flashBag.all %}
+            {% for message in messages %}
+                <div class="alert alert-{{ type }} fade in">
+                    {{ message|raw }}
+                </div>
+            {% endfor %}
+        {% endfor %}
+    </section>
+    <section class="twenty-padding">
+        <div class="row">
+            <div class="col-sm-10 col-sm-offset-1">
+                {{ form_start(form) }}
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.nom, 'Nom :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.nom, {'attr': {'class': 'form-control', 'placeholder': 'Nom'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.prenom, 'Prénom :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.prenom, {'attr': {'class': 'form-control', 'placeholder': 'Prénom'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.email, 'E-mail :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.email, {'attr': {'class': 'form-control', 'placeholder': 'E-mail'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.codePostal, 'Code postal :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.codePostal, {'attr': {'class': 'form-control', 'placeholder': 'Code Postal'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.ville, 'Ville :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.ville, {'attr': {'class': 'form-control', 'placeholder': 'Ville'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.telephone, 'Téléphone :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.telephone, {'attr': {'class': 'form-control', 'placeholder': 'Téléphone'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.ecole, 'Ecole :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.ecole, {'attr': {'class': 'form-control', 'placeholder': 'Ecole'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.diplome, 'Diplôme :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.diplome, {'attr': {'class': 'form-control', 'placeholder': 'Diplôme'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
+                    {{ form_label(form.niveauDetude, 'Nivea d\'étude :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.niveauDetude, {'attr': {'class': 'form-control', 'placeholder': 'Niveau d\'étude'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-12">
+                    <div class="col-sm-2 col-sm-offset-5">
+                        {{ form_widget(form.Envoyer, {'attr': {'class': 'form-control'}}) }}
+                    </div>
+                </div>
+                {{ form_end(form) }}
+            </div>
+        </div>
+    </section>
 {% endblock %}
 
 {% block javascript %}
