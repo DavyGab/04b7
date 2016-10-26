@@ -1067,7 +1067,7 @@ a.panel-heading.collapsed:after {
 
 .nav-tabs-round > li.active > a, .nav-tabs-round > li.active > a:hover, .nav-tabs-round > li.active > a:focus{
     border:1px solid white;
-    color: white;
+    color: black;
     background:none;
 }
 
@@ -1075,12 +1075,6 @@ a.panel-heading.collapsed:after {
 	padding: 20px 25px;
 	font-weight: bold;
     display:block;
-}
-
-.nav-tabs li.active a,
-.nav-tabs li.active a:hover,
-.nav-tabs li.active a:focus {
-	color: white;
 }
 
 .nav-tabs li a:hover {
@@ -1968,6 +1962,7 @@ nav.navbar {
 	-ms-transition: all 0.5s ease-in-out;
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
+	background-color: white;
 }
 
 nav.navbar.dark-bg{
@@ -2046,6 +2041,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 
 .navbar .nav li a {
 	display: block;
+	color: rgba(0, 0, 0, 0.61);
 	font-size: 14px;
 	height: 50px;
 	line-height: 50px;
@@ -2053,7 +2049,6 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	text-decoration: none;
 	outline: none;
 	background: inherit;
-	color: rgba(255, 255, 255, 0.75);
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-weight: bolder;
@@ -2066,7 +2061,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	margin: 0;
 	padding: 0;
 	letter-spacing: 2px;
-	color: white;
+	color: black;
 }
 
 .navbar .login-panel {
@@ -2100,7 +2095,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 }
 
 .navbar-toggle .icon-bar {
-	background: white;
+	background: black;
 	height: 2px;
 	border-radius: 2px;
 }
@@ -2192,7 +2187,7 @@ nav.navbar .container {
 	.navbar .nav li a:hover,
 	.navbar .nav li.active a {
 		background: none;
-		color: white;
+		color: black;
 	}
 }
 /*----------------------------------------------------------------------------------------
@@ -3489,4 +3484,18 @@ ul.posts-line .post .title {
 	position: relative;
 	top: 5px;
 	border-bottom: 0;
+}
+
+.ten-padding {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.text-ee {
+	color: white;
+}
+.text-ee2 {
+	color: #04adfd;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }

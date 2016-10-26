@@ -1,0 +1,29 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block title %}Excelience - Espace Etudiant{% endblock %}
+
+{% block body %}
+    <section id="content-line-2" class="bg-color3 cover-bg text-center half-padding" style="margin-top: 60px;height: 25%;background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}')">
+    </section>
+    <section id="content-line-2" class="bg-color3 cover-bg text-center ten-padding" style="height: 25%;background-color: #04adfd;">
+        <div class="container">
+            <h3 class="text-ee zero-bottom">Avec Excelience, tu as la possibilité d'être rémunéré jusqu'à 50€/h pour partager ton expérience des études après le BAC à des lycéens et à des étudiants.</h3>
+            <h3 class="text-ee zero-bottom">Aucun pré-requis n'est nécéssaire !</h3>
+        </div>
+    </section>
+    <section id="content-line-2" class="bg-color3 cover-bg text-center ten-padding" style="height: 25%;background-color: #f3f3f3;">
+        <div class="container">
+            <h3 class="text-ee2 zero-bottom">Remplis les champs ci-dessous et tu seras contacté dès que possible</h3>
+        </div>
+    </section>
+    <div class="well">
+        {{ form(form) }}
+    </div>
+{% endblock %}
+
+{% block javascript %}
+    <script src="{{ asset('bundles/app/scripts/jQueryFitText.js') }}"></script>
+    <script>
+        $(".text-ee").fitText();
+    </script>
+{% endblock %}

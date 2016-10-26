@@ -1,17 +1,22 @@
 <!doctype html>
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
-    <title>Excelience</title>
-    <script src="{{ asset('bundles/app/css/style.css') }}"></script>
-    {% block stylesheets %}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+        <title>{% block title %}Excelience{% endblock %}</title>
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/bootstrap.css') }}">
+        <link rel="stylesheet" href="{{ asset('bundles/app/css/style.css') }}">
+        {% block stylesheets %}
+        {% endblock %}
+    </head>
+    <body>
+        <div id="wrap">
+            {% include 'AppBundle::navbar.html.twig' %}
+            {% block body %}
+            {% endblock %}
+        </div>
+    </body>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    {% block javascripts %}
     {% endblock %}
-</head>
-<body>
-{% block body %}{% endblock %}
-</body>
-<script   src="https://code.jquery.com/jquery-3.1.1.min.js"   integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="   crossorigin="anonymous"></script>
-<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-{% block javascripts %}
-{% endblock %}
 </html>
