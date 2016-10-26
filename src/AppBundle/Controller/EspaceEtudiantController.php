@@ -6,6 +6,7 @@ use AppBundle\Entity\Utilisateurs;
 use AppBundle\Form\UtilisateursType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
+use Symfony\Component\HttpFoundation\Response;
 
 class EspaceEtudiantController extends Controller
 {
@@ -28,6 +29,16 @@ class EspaceEtudiantController extends Controller
         return $this->render('AppBundle:EspaceEtudiant:index.html.twig', array(
             'form' => $form->createView()
         ));
+    }
+
+    public function listeAction() {
+        $repository = $this->getDoctrine()->getManager()->getRepository('AppBundle:Utilisateurs');
+        $utilisateurs = $repository->findAll();
+
+        dump($utilisateurs);
+
+        exit;
+        return new Response();
     }
 
 }

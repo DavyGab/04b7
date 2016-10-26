@@ -5,3 +5,8 @@ homepage:
 espace_etudiant:
     path:     /espace-etudiant
     defaults: { _controller: AppBundle:EspaceEtudiant:index }
+
+
+liste_inscrits:
+    path:     /liste_inscrits
+    defaults: { _controller: AppBundle:EspaceEtudiant:liste }
