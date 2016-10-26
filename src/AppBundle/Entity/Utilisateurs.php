@@ -159,7 +159,7 @@ class Utilisateurs
     }
 
     /**
-     * @ORM\prePersist
+     * @ORM\PrePersist
      */
     public function preUpload()
     {
@@ -170,7 +170,7 @@ class Utilisateurs
     }
 
     /**
-     * @ORM\postPersist
+     * @ORM\PostPersist
      */
     public function upload()
     {
@@ -187,7 +187,7 @@ class Utilisateurs
     }
 
     /**
-     * @ORM\postRemove
+     * @ORM\PostRemove
      */
     public function removeUpload()
     {
