@@ -23,6 +23,7 @@ class UtilisateursType extends AbstractType
             ->add('ecole')
             ->add('diplome')
             ->add('niveauDetude')
+            ->add('cvTempFile', 'file')
             ->add('Envoyer', 'submit');
     }
     

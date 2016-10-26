@@ -11,6 +11,7 @@ use Symfony\Component\Validator\Constraints as Assert;
  * Utilisateurs
  *
  * @ORM\Table(name="utilisateurs")
+ * @ORM\HasLifecycleCallbacks
  * @ORM\Entity(repositoryClass="AppBundle\Repository\UtilisateursRepository")
  */
 class Utilisateurs
@@ -65,12 +66,13 @@ class Utilisateurs
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
-     * @Assert\Email(
-     *     message = "L'email '{{ value }}' n'est pas valide.",
-     *     checkMX = true
-     * )
      */
     private $email;
+/*
+* @Assert\Email(
+*     message = "L'email '{{ value }}' n'est pas valide.",
+*     checkMX = true
+*  ) */
 
     /**
      * @var int
@@ -122,6 +124,77 @@ class Utilisateurs
      * @ORM\Column(name="niveau_detude", type="string", length=255, nullable=true)
      */
     private $niveauDetude;
+
+    /**
+     * @var string
+     * @ORM\Column(name="cv_url", type="string", length=255, nullable=true)
+     */
+    private $cv;
+
+    /**
+     * @var file
+     * @Assert\File( maxSize = "1024k")
+     */
+    public $cvTempFile;
+
+
+    protected function getUploadDir()
+    {
+        return 'uploads/cv';
+    }
+
+    protected function getUploadRootDir()
+    {
+        return __DIR__.'/../../../../web/'.$this->getUploadDir();
+    }
+
+    public function getWebPath()
+    {
+        return null === $this->cv ? null : $this->getUploadDir().'/'.$this->cv;
+    }
+
+    public function getAbsolutePath()
+    {
+        return null === $this->cv ? null : $this->getUploadRootDir().'/'.$this->cv;
+    }
+
+    /**
+     * @ORM\prePersist
+     */
+    public function preUpload()
+    {
+        if (null !== $this->cvTempFile) {
+            // do whatever you want to generate a unique name
+            $this->cv = uniqid().'.'.$this->cvTempFile->guessExtension();
+        }
+    }
+
+    /**
+     * @ORM\postPersist
+     */
+    public function upload()
+    {
+        if (null === $this->cv) {
+            return;
+        }
+
+        // if there is an error when moving the file, an exception will
+        // be automatically thrown by move(). This will properly prevent
+        // the entity from being persisted to the database on error
+        $this->cvTempFile->move($this->getUploadRootDir(), $this->cv);
+
+        //unlink($this->cvTempFile);
+    }
+
+    /**
+     * @ORM\postRemove
+     */
+    public function removeUpload()
+    {
+        if ($file = $this->getAbsolutePath()) {
+            unlink($file);
+        }
+    }
 
 
     /**

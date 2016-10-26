@@ -813,7 +813,6 @@ a.read-more:hover {
 .pattern-bg,
 .contain-bg {
 	background-repeat: no-repeat;
-	background-position: center;
 	background-size: cover;
 }
 
