@@ -11,8 +11,10 @@
     color: white;
 }
 
-.navbar .nav li a {
-    color: rgba(255, 255, 255, 0.75);
+@media (min-width: 992px) {
+    .navbar .nav li a {
+        color: rgba(255, 255, 255, 0.75);
+    }
 }
 
 .navbar-toggle .icon-bar {
