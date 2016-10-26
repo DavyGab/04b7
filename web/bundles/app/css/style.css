@@ -392,6 +392,11 @@ form label {
 	position: relative;
 	margin: 0;
 }
+
+.form-control {
+	font-weight: 200;
+	font-size: 15px;
+}
 /*
 form label.error {
 	background: #e44646;
