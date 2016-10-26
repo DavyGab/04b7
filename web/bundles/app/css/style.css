@@ -1963,6 +1963,7 @@ nav.navbar {
 	-o-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	background-color: white;
+	top: 1%;
 }
 
 nav.navbar.dark-bg{

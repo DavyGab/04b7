@@ -12,7 +12,7 @@ function onResize() {
     $("#wrap").height(max_height);
     $("header").height(max_height);
 
-    var top = ((w_height - $( "#text_home" ).height()) / 1.8);
+    var top = ((w_height - $( "#text_home" ).height()) / 2);
     top = top < 70 ? 70 : top;
     $( "#text_home" ).css({ top: top  + 'px'});
 }
