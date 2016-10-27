@@ -106,6 +106,16 @@ class User extends BaseUser
      */
     private $cvUrl;
 
+    public function __construct()
+    {
+        parent::__construct();
+
+        $this->type = 0;
+        $this->status = 0;
+        $this->nom = '';
+        $this->prenom = '';
+    }
+
 
     /**
      * Get id

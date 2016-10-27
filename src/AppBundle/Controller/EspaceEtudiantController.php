@@ -7,6 +7,9 @@ use AppBundle\Form\UtilisateursType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
+
+
 
 class EspaceEtudiantController extends Controller
 {
@@ -21,8 +24,8 @@ class EspaceEtudiantController extends Controller
             $em->persist($utilisateur);
             $em->flush();
 
-            $request->getSession()->getFlashBag()
-                ->add('success',
+            $request
+                ->addFlash('success',
                     'Vos informations ont été enregistrées. Nous vous contacterons très vite.');
         }
 
@@ -31,6 +34,9 @@ class EspaceEtudiantController extends Controller
         ));
     }
 
+    /**
+     * @Security("has_role('ROLE_ADMIN')")
+     */
     public function listeAction() {
         $repository = $this->getDoctrine()->getManager()->getRepository('AppBundle:Utilisateurs');
         $utilisateurs = $repository->findAll();
