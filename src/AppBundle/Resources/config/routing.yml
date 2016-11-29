@@ -6,6 +6,9 @@ espace_etudiant:
     path:     /espace-etudiant
     defaults: { _controller: AppBundle:EspaceEtudiant:index }
 
+presentation:
+    path:     /presentation
+    defaults: { _controller: AppBundle:Presentation:index }
 
 liste_inscrits:
     path:     /liste_inscrits

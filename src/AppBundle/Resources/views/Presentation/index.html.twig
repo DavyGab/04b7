@@ -1,0 +1,78 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block title %}Excelience - Espace Etudiant{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/jquery.fullPage.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div id="fullpage" class="fullpage" style="background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}'); background-position-y: 0">
+        <section id="section0" class="section bg-color3 cover-bg text-center" style="padding: 0">
+            <div class="container-fluid backBlue">
+                <h2 class="text-ee marg0 zero-bottom g-title pad10bt">Décide ton orientation</h2>
+            </div>
+            <div class="container-fluid backWhite pad10bt">
+                <h3 class="text-ee2 marg0 zero-bottom">Tu ne sais pas où t'inscrire après le bac</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">Tu sais quelle formation t'intéresse mais tu ne penses pas avoir le niveau scolaire pour la rejoindre ou tu ne sais pas comment t'y prendre</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">N'hésite plus <button class="btn btn-primary">Inscris-toi</button></h3>
+                <h3 class="text-ee2 marg0 zero-bottom">Excelience te permet de décider ton orientation et d'atteindre ton objectif en bénéficiant des différentes expériences d'étudiants de grandes écoles, d'universités ou autres</h3>
+            </div>
+        </section>
+    </div>
+    <section class="fullpage section bg-color3 cover-bg text-center" style="padding: 0 0 60px;background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}')">
+        <div class="container-fluid backBlue">
+            <h2 class="text-ee marg0 zero-bottom">Rencontre des étudiants sélectionnés selon ton profil</h2>
+        </div>
+        <div class="container-fluid backWhite">
+            <div class="col-md-12">
+                <h3 class="text-ee2 marg0 zero-bottom">Des étudants qui ont vécu les mêmes difficultés que toi, ont eu les mêmes doutes et qui sont aujourd'hui dans la formation que tu souhaites rejoindre</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">Tu sais quelle formation t'intéresse mais tu ne penses pas avoir le niveau scolaire pour la rejoindre ou tu ne sais pas comment t'y prendre</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">Ces étudiants ne sont pas envoyé par leur établissement pour te vendre leur formation, mais sont là pour partager avec toi leurs expériences personnelles, les points positifs comme négatifs, pour que tu ais l'idée la plus juste des formations de ton choix</h3>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="col-lg-12">
+                    <div class="circle">1</div>
+                    <h4>Clarifie tes besoins et attentes avec l'équipe Excelience</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="col-lg-12">
+                    <div class="circle">2</div>
+                    <h4>Inscris-toi à l'une de nos offres</h4>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="col-lg-12">
+                    <div class="circle">3</div>
+                    <h4>Assiste à nos ateliers et obtient la réponse à toutes tes interrogations</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="fullpage section bg-color3 cover-bg text-center" style="padding: 0 0 60px;background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}')">
+        <div class="container-fluid backBlue">
+            <h2 class="text-ee marg0 zero-bottom pad10bt">Gagne du temps et de l'énergie !</h2>
+        </div>
+        <div class="container-fluid backWhite pad10bt">
+            <div class="col-md-12">
+                <h3 class="text-ee2 marg0 zero-bottom">En prépas, universités, écoles de commerce, écoles d'ingénieurs, IUT et autres, il existe pus de 4600 établissements différents en France, dès lors comment faire un choix qui te corresponde ?</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">Aujourd'hui 30% des étudiants se réorientent dès la première année d'études, ce qui génère unstress et des efforts supplémentaires à réaliser pour rattraper le temps perdu.</h3>
+            </div>
+            <div class="col-md-12 pad10bt">
+                <h3 class="text-ee2 marg0 zero-bottom">Excelience te propose ainse un accompagnement complet dans ta prise de décision pour t'éviter les erreurs d'orientation et te faire gagner du temps et de l'énergie !</h3>
+            </div>
+            <div class="col-md-4 col-md-offset-4">
+                <h3><button class="btn btn-primary">Découvre nos programmes</button></h3>
+            </div>
+        </div>
+    </section>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="application/javascript">
+        var navHeight = $("nav")[0].offsetHeight;
+        $('#fullpage').css('margin-top', navHeight + 'px');
+        $('.fullpage').css('min-height', $(window).height() - navHeight);
+    </script>
+{% endblock %}

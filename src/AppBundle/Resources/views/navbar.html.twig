@@ -5,12 +5,12 @@
         <button class="round-toggle navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse" data-selector="Footer"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         <div class="collapse navbar-collapse navMenuCollapse">
             <ul class="nav">
-                <li data-selector="nav li"><a href="#" data-selector="nav a">Présentation</a></li>
-                <li data-selector="nav li"><a href="#" data-selector="nav a">Nos programmes</a></li>
-                <li data-selector="nav li"><a href="#" data-selector="nav a">Events</a></li>
-                <li data-selector="nav li"><a href="#" data-selector="nav a">S'inscrire</a></li>
-                <li data-selector="nav li"><a href="#" data-selector="nav a">Témoignages</a></li>
-                <li data-selector="nav li"><a href="#" data-selector="nav a">Blog</a></li>
+                <li data-selector="nav li"><a href="{{ path('presentation') }}" data-selector="nav a">{{ "menu.presentation"|trans }}</a></li>
+                <li data-selector="nav li"><a href="#" data-selector="nav a">{{ "menu.programmes"|trans }}</a></li>
+                <li data-selector="nav li"><a href="#" data-selector="nav a">{{ "menu.events"|trans }}</a></li>
+                <li data-selector="nav li"><a href="#" data-selector="nav a">{{ "menu.inscription"|trans }}</a></li>
+                <li data-selector="nav li"><a href="#" data-selector="nav a">{{ "menu.temoignages"|trans }}</a></li>
+                <li data-selector="nav li"><a href="#" data-selector="nav a">{{ "menu.blog"|trans }}</a></li>
             </ul>
         </div>
     </div>

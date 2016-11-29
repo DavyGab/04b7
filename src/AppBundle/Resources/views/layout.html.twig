@@ -7,6 +7,11 @@
         <link rel="stylesheet" href="{{ asset('bundles/app/css/style.css') }}">
         {% block stylesheets %}
         {% endblock %}
+        <script
+                src="https://code.jquery.com/jquery-2.2.4.min.js"
+                integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+                crossorigin="anonymous"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
     <body>
         <div id="wrap">
@@ -14,9 +19,7 @@
             {% block body %}
             {% endblock %}
         </div>
+        {% block javascripts %}
+        {% endblock %}
     </body>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-    {% block javascripts %}
-    {% endblock %}
 </html>

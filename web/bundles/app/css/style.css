@@ -22,7 +22,6 @@ header {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-	border-bottom: 1px solid #e8e8e8;
 }
 
 section.dark-bg,
@@ -250,10 +249,15 @@ h4 {
 }
 }
 @media (max-width: 767px) {
-
-.row [class^=col-sm-] {
-	padding-bottom: 40px;
+	.row [class^=col-sm-] {
+		padding-bottom: 40px;
+	}
 }
+
+@media (max-width: 500px) {
+	h3 {
+		font-size: 20px;
+	}
 }
 
 /*----------------------------------------------------------------------------------------
@@ -637,18 +641,6 @@ form.line-form.five-fields button{
 	border-radius: 5px;
 }
 
-.btn-primary {
-	background: white;
-	border-color: white;
-}
-
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-	background: #009acc;
-	border-color: #009acc;
-}
-
 .btn-primary-white {
 	background: #fff;
 	border-color: #fff;
@@ -739,59 +731,6 @@ a.read-more:hover {
 	margin-top: 2px;
 }
 
-.marker-circle{
-    display:inline-block;
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-circle-dark.png) center no-repeat;
-    background-size:contain;
-    padding:40px 0;
-    text-align:center;
-}
-.dark-bg .marker-circle{
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-circle-light.png) center no-repeat;
-    background-size:contain;
-}
-
-
-.marker-arrow-left{
-    display:inline-block;
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-left-dark.png) left no-repeat;
-    padding-left:150px;
-    text-align:right;
-
-
-}
-.dark-bg .marker-arrow-left{
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-left-light.png) left no-repeat;
-}
-
-.marker-arrow-right{
-    display:inline-block;
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-right-dark.png) right no-repeat;
-    padding-right:150px;
-    text-align:left;
-}
-.dark-bg .marker-arrow-right{
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-right-light.png) right no-repeat;
-}
-
-.marker-arrow-down{
-    display:inline-block;
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-down-dark.png) center top no-repeat;
-    padding-top:125px;
-}
-.dark-bg .marker-arrow-down{
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-down-light.png) center top no-repeat;
-}
-
-.marker-arrow-up{
-    display:inline-block;
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-up-dark.png) center bottom no-repeat;
-    padding-bottom:125px;
-}
-.dark-bg .marker-arrow-up{
-    background:url(../../../../../../../Downloads/580711301b4cb_website/images/marker-arrow-up-light.png) center bottom no-repeat;
-}
-
 /*----------------------------------------------------------------------------------------
 						BACKGROUND TYPE STYLES
 -----------------------------------------------------------------------------------------*/
@@ -871,7 +810,7 @@ h4.sub-title {
 .bg-color2 .sub-title{
 	color:#fff;
 }
-
+.g-title,
 .big-title,
 .giant-title,
 .mega-title{
@@ -881,6 +820,10 @@ h4.sub-title {
 	margin-bottom: 70px;
 }
 
+.g-title {
+	font-size: 50px;
+	margin-bottom: inherit;
+}
 .giant-title {
 	font-size: 110px;
 }
@@ -949,13 +892,16 @@ h4.sub-title {
 }
 
 @media (max-width: 767px) {
-.big-title,
-.giant-title {
-	font-size: 40px;
-}
-.mega-title {
-	font-size: 100px;
-}
+	.g-title {
+		font-size: 30px;
+	}
+	.big-title,
+	.giant-title {
+		font-size: 40px;
+	}
+	.mega-title {
+		font-size: 100px;
+	}
 }
 
 /*----------------------------------------------------------------------------------------
@@ -3380,6 +3326,9 @@ ul.posts-line .post .title {
 										ADDITIONAL STYLES
 ----------------------------------------------------------------------------------------*/
 
+.marg0 {
+	margin: 0;
+}
 .zero-bottom {
 	padding-bottom: 0;
 }
@@ -3508,4 +3457,43 @@ ul.posts-line .post .title {
 	color: #04adfd;
 	margin-top: 10px;
 	margin-bottom: 10px;
+}
+
+.margT60 {
+	margin-top: 60px;
+}
+
+.backWhite {
+	background-color: white;
+}
+.backBlue {
+	background-color: #04adf6;
+}
+.fp-tableCell {
+	vertical-align: top !important;
+}
+
+.pad10bt {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2.text-ee {
+	text-transform: uppercase;
+}
+
+.circle{
+	height: 100px;
+	width: 100px;
+	border: 1px solid #04adf6;
+	border-radius: 50%;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	line-height: 100px;
+	overflow: hidden;
+	font-size: 50px;
+	background-color: white;
+	margin-left: auto;
+	margin-right: auto;
 }
