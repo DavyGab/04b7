@@ -10,6 +10,10 @@ presentation:
     path:     /presentation
     defaults: { _controller: AppBundle:Presentation:index }
 
+programmes:
+    path:     /programmes
+    defaults: { _controller: AppBundle:Programmes:index }
+
 liste_inscrits:
     path:     /liste_inscrits
     defaults: { _controller: AppBundle:EspaceEtudiant:liste }

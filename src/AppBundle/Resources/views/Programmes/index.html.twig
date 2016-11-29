@@ -1,0 +1,58 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block title %}Excelience - Espace Etudiant{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('bundles/app/css/jquery.fullPage.css') }}">
+{% endblock %}
+
+{% block body %}
+    <div id="fullpage" class="fullpage" style="background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}'); background-position-y: 0">
+        <section id="section0" class="section bg-color3 cover-bg text-center pad10bt" style="padding: 0">
+            <div class="container-fluid backBlue">
+                <h2 class="text-ee marg0 zero-bottom g-title pad10bt">Nos Programmes</h2>
+            </div>
+            <div class="container-fluid backWhite pad10bt">
+                <h3 class="text-ee2 marg0 zero-bottom">En t'inscrivant tu auras le choix entre 2 programmes : le pack light ou le pack full</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">Ces 2 programmes se déroulent sur des demi-journées organisées la semaine en fin de journée ainsi qu'une journée complète le week-end en petit effectif de 5 à 12 personnes.</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">L'objectif de ces programmes est de t'accompagner dans ta décision d'orientation en te donnant l'information la plus fidèle des différents cursus de l'enseignement supérieur et en te formant à un outil d'aide à la décision dédié à l'enseignement supérieur.</h3>
+                <h3 class="text-ee2 marg0 zero-bottom">Tu rencontreras juqu'à 14 étudiants ou diplomés différents qui te parleront librement des cursus qu'ils suivent et répondront à toutes tes interrogations.</h3>
+            </div>
+        </section>
+        <section id="section0" class="section bg-color3 cover-bg text-center" style="padding: 0">
+            <div class="container-fluid backWhite pad10bt margT60">
+                <div class="col-md-3 col-md-offset-3">
+                    <div class="pricing-table">
+                        <h4 class="bg-color4 dark-bg">Pack light<span>18 heures - 450€</span></h4>
+                        <ul class="benefits-list">
+                            <li>Partage <strong>d'expérience</strong> d'étudiants présélectionnés selon ton profil</li>
+                            <li>Partage d'expérience avec desjeunes diplômés</li>
+                            <li>Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur</li>
+                            <li>Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme</li>
+                        </ul>
+                        <a href="#" target="_blank" class="btn btn-primary">Je m'inscris</a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="pricing-table">
+                        <h4 class="bg-color4 dark-bg">Pack full<span>24 heures - 650€</span></h4>
+                        <ul class="benefits-list">
+                            <li class="text-center"><strong>Pack Light<br> + </strong></li>
+                            <li>Immersion dans un établissement partenaire (Dauphine, école de commerce, universités, ...)</li>
+                            <li>Rencontre de professionnels expérimentés</li>
+                        </ul>
+                        <a href="#" target="_blank" class="btn btn-primary">Je m'inscris</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="application/javascript">
+        var navHeight = $("nav")[0].offsetHeight;
+        $('#fullpage').css('margin-top', navHeight + 'px');
+        $('.fullpage').css('min-height', $(window).height() - navHeight);
+    </script>
+{% endblock %}
