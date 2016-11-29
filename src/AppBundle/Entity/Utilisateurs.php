@@ -66,13 +66,12 @@ class Utilisateurs
      * @var string
      *
      * @ORM\Column(name="email", type="string", length=255)
+     * @Assert\Email(
+     *     message = "L'email '{{ value }}' n'est pas valide.",
+     *     checkMX = true
+     *  )
      */
     private $email;
-/*
-* @Assert\Email(
-*     message = "L'email '{{ value }}' n'est pas valide.",
-*     checkMX = true
-*  ) */
 
     /**
      * @var int
@@ -132,8 +131,11 @@ class Utilisateurs
     private $cv;
 
     /**
-     * @var file
-     * @Assert\File( maxSize = "1024k")
+     * @Assert\File(
+     *     maxSize = "1024k",
+     *     mimeTypes = {"application/pdf", "application/x-pdf"},
+     *     mimeTypesMessage = "Merci d'uploader un cv au format PDF"
+     * )
      */
     public $cvTempFile;
 

@@ -8,21 +8,24 @@
         <div id="text_home" class="container" style="position: absolute">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2 text-center">
-                    <h2 data-selector="h1" class="title_home">Rencontre des étudiants pour décider ton orientation</h2>
+                    <h2 data-selector="h1" class="title_home">{{ 'home.titre'|trans }}</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-md-6 text-center">
                     <p class="p_home">
-                        Tu es lycéen et tu ne sais pas où t'inscrire après le bac.<br>ou tu es étudiant et tu veux changer de voie.
+                        {{ 'home.orientation.p1'|trans }}
+                        <br>
+                        {{ 'home.orientation.p2'|trans }}
                     </p>
-                    <a href="#contact-full"><div class="btn_home">Espace Orientation</div></a>
+                    <a href="#contact-full"><div class="btn_home">{{ "home.orientation.bouton"|trans }}</div></a>
                 </div>
                 <div class="col-md-6 text-center">
                     <p class="p_home">
-                        Tu es étudiant ou diplomé et tu souhaites faire partager<br>ton expérience de l'enseignement supérieur.
-                    </p>
-                    <a href="{{ path('espace_etudiant') }}"><div class="btn_home">Espace Etudiant</div></a>
+                        {{ 'home.etudiant.p1'|trans }}
+                        <br>
+                        {{ 'home.etudiant.p2'|trans }}
+                    <a href="{{ path("espace_etudiant") }}"><div class="btn_home">{{ "home.etudiant.bouton"|trans }}</div></a>
                 </div>
             </div>
         </div>
