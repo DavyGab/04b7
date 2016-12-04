@@ -3,72 +3,128 @@
 {% block title %}Excelience - Espace Etudiant{% endblock %}
 
 {% block body %}
-    <div id="fullpage" class="fullpage" style="background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}'); background-position-y: 0">
-        <section id="section0" class="section bg-color3 cover-bg text-center" style="padding: 0">
-            <div class="container-fluid backBlue">
-                <h2 class="text-ee marg0 zero-bottom g-title pad10bt">Décide ton orientation</h2>
-            </div>
-            <div class="container-fluid backWhite pad10bt">
-                <h3 class="text-ee2 marg0 zero-bottom">Tu ne sais pas où t'inscrire après le bac</h3>
-                <h3 class="text-ee2 marg0 zero-bottom">Tu sais quelle formation t'intéresse mais tu ne penses pas avoir le niveau scolaire pour la rejoindre ou tu ne sais pas comment t'y prendre</h3>
-                <h3 class="text-ee2 marg0 zero-bottom">N'hésite plus <button class="btn btn-primary">Inscris-toi</button></h3>
-                <h3 class="text-ee2 marg0 zero-bottom">Excelience te permet de décider ton orientation et d'atteindre ton objectif en bénéficiant des différentes expériences d'étudiants de grandes écoles, d'universités ou autres</h3>
-            </div>
-        </section>
-    </div>
-    <section class="fullpage section bg-color3 cover-bg text-center" style="padding: 0 0 60px;background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}')">
-        <div class="container-fluid backBlue">
-            <h2 class="text-ee marg0 zero-bottom">Rencontre des étudiants sélectionnés selon ton profil</h2>
-        </div>
-        <div class="container-fluid backWhite">
-            <div class="col-md-12">
-                <h3 class="text-ee2 marg0 zero-bottom">Des étudants qui ont vécu les mêmes difficultés que toi, ont eu les mêmes doutes et qui sont aujourd'hui dans la formation que tu souhaites rejoindre</h3>
-                <h3 class="text-ee2 marg0 zero-bottom">Tu sais quelle formation t'intéresse mais tu ne penses pas avoir le niveau scolaire pour la rejoindre ou tu ne sais pas comment t'y prendre</h3>
-                <h3 class="text-ee2 marg0 zero-bottom">Ces étudiants ne sont pas envoyé par leur établissement pour te vendre leur formation, mais sont là pour partager avec toi leurs expériences personnelles, les points positifs comme négatifs, pour que tu ais l'idée la plus juste des formations de ton choix</h3>
-            </div>
-            <div class="col-sm-4 text-center">
-                <div class="col-lg-12">
-                    <div class="circle">1</div>
-                    <h4>Clarifie tes besoins et attentes avec l'équipe Excelience</h4>
+    <section id="content-full-right" class="bg-color1 dark-bg fixed-bg" style="background-color: rgb(255, 255, 255); padding-top: 100px; padding-bottom: 100px; border-bottom-width: 0px; border-bottom-color: rgb(255, 255, 255); background-repeat: no-repeat; background-size: cover; background-attachment: fixed;" data-selector="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-5 col-sm-4 hidden-sm hidden-xs">
+                    <img src="{{ asset('bundles/app/images/bg_prez.png') }}" class="col-xs-12">
                 </div>
-            </div>
-            <div class="col-sm-4 text-center">
-                <div class="col-lg-12">
-                    <div class="circle">2</div>
-                    <h4>Inscris-toi à l'une de nos offres</h4>
-                </div>
-            </div>
-            <div class="col-sm-4 text-center">
-                <div class="col-lg-12">
-                    <div class="circle">3</div>
-                    <h4>Assiste à nos ateliers et obtient la réponse à toutes tes interrogations</h4>
+                <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-2">
+                    <img src="{{ asset('bundles/app/images/logo.gif') }}" class="col-xs-8 col-xs-offset-2">
+                    <div class="editContent" data-selector="Footer"><h2 class="title" data-selector="h2" style="color: rgb(0, 175, 255); font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px; font-family: Satisfy">Décider pour s'orienter</h2>
+                        <p data-selector="p" style="color: rgb(0, 175, 255); font-size: 17px; background-color: rgba(0, 0, 0, 0);">
+                            Excelience te permet de décider ton orientation et d'atteindre ton objectif en bénéficiant des différentes expériences d'étudiants de grandes écoles, d'universités ou autres
+                        </p>
+                        <h1 class=" flexGrid-main12 " style="list-style-type: none; margin-bottom: 10px; font-family: Roboto; font-size: 1.25em; border: 0px; font-variant-numeric: inherit; font-stretch: inherit; line-height: inherit; width: 550px; display: flex; flex-wrap: wrap; align-items: stretch; color: rgb(51, 51, 51); background-color: rgb(255, 255, 255);" data-selector="h1"></h1></div>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="fullpage section bg-color3 cover-bg text-center" style="padding: 0 0 60px;background-image:url('{{ asset('bundles/app/images/bg-3.jpg') }}')">
-        <div class="container-fluid backBlue">
-            <h2 class="text-ee marg0 zero-bottom pad10bt">Gagne du temps et de l'énergie !</h2>
-        </div>
-        <div class="container-fluid backWhite pad10bt">
-            <div class="col-md-12">
-                <h3 class="text-ee2 marg0 zero-bottom">En prépas, universités, écoles de commerce, écoles d'ingénieurs, IUT et autres, il existe pus de 4600 établissements différents en France, dès lors comment faire un choix qui te corresponde ?</h3>
-                <h3 class="text-ee2 marg0 zero-bottom">Aujourd'hui 30% des étudiants se réorientent dès la première année d'études, ce qui génère unstress et des efforts supplémentaires à réaliser pour rattraper le temps perdu.</h3>
-            </div>
-            <div class="col-md-12 pad10bt">
-                <h3 class="text-ee2 marg0 zero-bottom">Excelience te propose ainse un accompagnement complet dans ta prise de décision pour t'éviter les erreurs d'orientation et te faire gagner du temps et de l'énergie !</h3>
-            </div>
-            <div class="col-md-4 col-md-offset-4">
-                <h3><button class="btn btn-primary">Découvre nos programmes</button></h3>
-            </div>
-        </div>
-    </section>
-{% endblock %}
+    </section><!-- BENEFITS LIST LEFT BLOCK -->
+    <section id="benefits-list-left" class="dark-bg bg-color1" data-selector="section" style="background-image: none; background-color: rgb(232, 247, 255); padding-top: 100px; padding-bottom: 100px; background-repeat: repeat; background-size: auto; background-attachment: scroll; border-bottom-width: 0px; border-bottom-color: rgb(255, 255, 255);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <img class="screen" src="{{ asset('bundles/app/images/bg2_prez.png')}}" alt="" data-selector="img" style="width: 293px; margin-top: 85px">
+                </div>
+                <div class="col-md-7 col-md-pull-4">
+                    <h2 class="title" data-selector="h2" style="color: rgb(0, 0, 0); font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 100px; margin-top: 0px; font-family: Satisfy;">Toi aussi rejoins Excelience si :</h2>
+                    <ul class="item-list-left item-list-small item-list">
+                        <i class="fa fa-map-signs" data-selector=".icon" style="float:left; color: rgb(0, 0, 0); font-size: 48px; margin-right: 15px;"></i>
+                        <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
+                            <h3 data-selector="h3" style="line-height: 48px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">Tu ne sais pas où t'inscrire après le BAC</h3>
 
-{% block javascripts %}
-    <script type="application/javascript">
-        var navHeight = $("nav")[0].offsetHeight;
-        $('#fullpage').css('margin-top', navHeight + 'px');
-        $('.fullpage').css('min-height', $(window).height() - navHeight);
-    </script>
+                        </li>
+                        <i class="fa fa-tasks" data-selector=".icon" style="float:left; color: rgb(0, 0, 0); font-size: 48px; margin-right: 15px;"></i>
+                        <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
+                            <h3 data-selector="h3" style="line-height: 48px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">Tu ne penses pas avoir le niveau scolaire pour rejoindre la formation de tes rêves</h3>
+
+                        </li>
+                        <i class="fa fa-random" data-selector=".icon" style="float:left; color: rgb(0, 0, 0); font-size: 48px; margin-right: 15px;" ></i>
+                        <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
+                            <h3 data-selector="h3" style="line-height: 48px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">Tu souhaites changer de voie</h3>
+
+                        </li>
+                        <li style="margin-top: 20px; text-align: center;" data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
+                            <a href="#" class="btn btn-lg btn-primary" data-selector="a.btn, a.download-btn, button.btn, a.goto" style="color: rgb(0, 0, 0); border-color: rgb(255, 255, 255); border-width: 1px; border-radius: 5px; font-size: 20px; background-color: rgb(255, 255, 255);">Je m'inscris !</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!-- BENEFITS GRID BLOCK -->
+    <section id="benefits-grid" data-selector="section" style="background-image: none; background-color: rgba(0, 0, 0, 0); padding-top: 60px; padding-bottom: 100px; border-bottom-width: 1px; border-bottom-color: rgb(232, 232, 232); background-repeat: repeat; background-size: auto; background-attachment: scroll;">
+        <div class="container text-center">
+            <div class="editContent" data-selector="Footer">
+                <h2 class="title" data-selector="h2" style="color: rgb(0, 175, 255); font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px; font-family: Satisfy;">Rencontre des étudiants sélectionnés selon ton profil</h2>
+            </div>
+            <div class="row" style="margin-bottom: 60px;">
+                <div class="col-sm-6 col-sm-offset-3 sep-bottom editContent" data-selector="Footer">
+                    <p data-selector="p" style="color: rgb(0, 175, 255); font-size: 17px; background-color: rgba(0, 0, 0, 0);">Des étudants qui ont vécu les mêmes difficultés que toi, ont eu les mêmes doutes et qui sont aujourd'hui dans la formation que tu souhaites rejoindre</p>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="item-list-left">
+                        <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li" style="text-align: center; padding: 0px !important;">
+                            <div class="step-num" style="color: rgb(0, 175, 255); height: 85px; width: 85px; top: 0px; border: 1px solid rgb(0, 175, 255); border-radius: 50%; font-family: Roboto, sans-serif; text-align: center; overflow: hidden; line-height: 85px; font-weight: lighter; font-size: 36px; margin-left: auto; margin-right: auto; margin-bottom: 15px;" data-selector="Footer">1</div>
+                            <h3 data-selector="h3" style="color: rgb(0, 175, 255); font-size: 26px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;">Clarifie tes besoins et attentes avec l'équipe Excelience</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="item-list-left">
+                        <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li" style="text-align: center; padding: 0px !important;">
+                            <div class="step-num" style="color: rgb(0, 175, 255); height: 85px;width: 85px;margin-left: -50px;top: 0;border: 1px solid rgb(0, 175, 255);border-radius: 50%;font-family: 'Roboto', sans-serif;text-align: center;li;overflow: hidden;line-height: 85px;font-weight: lighter;font-size: 36px;margin-left: auto;margin-right: auto;margin-bottom: 15px;" data-selector="Footer">2</div>
+                            <h3 data-selector="h3" style="color: rgb(0, 175, 255); font-size: 26px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;">Inscris toi à l'une de nos offres</h3>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <ul class="item-list-left">
+                        <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li" style="text-align: center; padding: 0px !important;">
+                            <div class="step-num" style="color: rgb(0, 175, 255); height: 85px;width: 85px;margin-left: -50px;top: 0;border: 1px solid rgb(0, 175, 255);border-radius: 50%;font-family: 'Roboto', sans-serif;text-align: center;li;overflow: hidden;line-height: 85px;font-weight: lighter;font-size: 36px;margin-left: auto;margin-right: auto;margin-bottom: 15px;" data-selector="Footer">3</div>
+                            <h3 data-selector="h3" style="color: rgb(0, 175, 255); font-size: 26px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;" src="images/screen-3b.png">Assiste à nos ateliers et obtient la réponse à toutes tes interrogations</h3>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section><!-- BENEFITS GRID 2 BLOCK -->
+    <section id="benefits-grid-2" class="bg-color1 dark-bg" data-selector="section" style="background-color: rgb(232, 247, 255); padding-top: 40px; padding-bottom: 60px; background-repeat: no-repeat; background-size: 350px; background-position: 100% 100%; background-image: url({{ asset('bundles/app/images/bg3_prez.png') }})">
+        <h2 class="title" data-selector="h2" style="text-align: center; color: rgb(0, 0, 0); font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px; font-family: Satisfy;">Gagne du temps et de l'énergie !</h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-md-5 col-md-offset-1">
+                            <div class="row">
+                                <div class="col-xs-2 row-eq-height" style="font-family: Satisfy; color: rgb(0, 175, 255); font-size: 28px; line-height: 90px;">
+                                    4644
+                                </div>
+                                <div class="col-xs-9 col-xs-offset-1 row-eq-height" style="color: black;">
+                                    établissements différents existent en France, dès lors comment faire un choix qui te corresponde ?
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="row">
+                                <div class="col-xs-2 row-eq-height" style="font-family: Satisfy; color: rgb(0, 175, 255); font-size: 28px; line-height: 90px;">
+                                    30%
+                                </div>
+                                <div class="col-xs-9 col-xs-offset-1 row-eq-height" style="color: black;">
+                                    des étudiants se réorientent dès la première année d'étude, ce qui génère un stress et des efforts supplémentaires à réaliser pour rattraper le temps perdu
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-top:30px">
+                <div class="col-md-8 col-md-offset-2" style="font-family:Satisfy; font-style: italic; text-align: center; color: black; font-size:1.3em;">
+                    Excelience te propose ainsi un accompagnement complet dans ta prise de décision pour t'éviter les erreurs d'orientation et te faire gagner du temps et de l'énergie
+                </div>
+            </div>
+            <div class="col-md-12 text-center" style="margin-top: 35px;">
+                <a href="#" class="btn btn-lg btn-primary" data-selector="a.btn, a.download-btn, button.btn, a.goto" style="color: rgb(0, 0, 0); border-color: rgb(255, 255, 255); border-width: 1px; border-radius: 5px; font-size: 20px; background-color: rgb(255, 255, 255);" src="images/screen-3b.png">Découvrir les programmes</a>
+            </div>
+        </div>
+    </section>
 {% endblock %}

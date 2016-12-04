@@ -1906,6 +1906,16 @@ img.full-width {
 						MAIN NAVIGATION STYLES
 ----------------------------------------------------------------------------------------*/
 
+.logo {
+	width: 65px;
+}
+
+@media (max-width: 992px) {
+	.logo {
+		width: 60px;
+	}
+}
+
 nav.navbar {
 	border-radius: 0;
 	border: none;
@@ -2016,7 +2026,9 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	margin: 0;
 	padding: 0;
 	letter-spacing: 2px;
-	color: black;
+	font-size: 25px;
+	color: #00c0ff;
+	font-family: Satisfy;
 }
 
 .navbar .login-panel {
