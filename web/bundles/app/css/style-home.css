@@ -30,5 +30,9 @@
 }
 
 nav.navbar {
-    background-color: transparent;
+    background-color: transparent !important;
+}
+
+.navbar .nav li:hover, .navbar .nav li.active {
+    background-color: transparent !important;
 }
