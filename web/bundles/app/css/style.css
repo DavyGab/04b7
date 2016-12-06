@@ -2139,24 +2139,24 @@ nav.navbar .container {
 		color: white !important;
 		border-bottom: 1px black solid;
 	}
-	.navbar .nav li a {
-		color: black;
-	}
+	/*.navbar .nav li a {*/
+		/*color: black;*/
+	/*}*/
 
-	.navbar .nav li:hover a,
-	.navbar .nav li.active a {
-		color: #00c0ff;
-	}
+	/*.navbar .nav li:hover a,*/
+	/*.navbar .nav li.active a {*/
+		/*color: #00c0ff;*/
+	/*}*/
 }
 @media (min-width: 992px) {
-	.navbar .nav li:hover a,
-	.navbar .nav li.active a {
-		color: #00c0ff;
-	}
-	.navbar .nav li:hover,
-	.navbar .nav li.active  {
-		background-color: white;
-	}
+	/*.navbar .nav li:hover a,*/
+	/*.navbar .nav li.active a {*/
+		/*color: #00c0ff;*/
+	/*}*/
+	/*.navbar .nav li:hover,*/
+	/*.navbar .nav li.active  {*/
+		/*background-color: white;*/
+	/*}*/
 }
 /*----------------------------------------------------------------------------------------
 						INTRO STYLES
