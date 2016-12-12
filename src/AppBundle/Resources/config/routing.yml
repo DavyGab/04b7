@@ -6,6 +6,10 @@ espace_etudiant:
     path:     /espace-etudiant
     defaults: { _controller: AppBundle:EspaceEtudiant:index }
 
+inscription:
+    path:     /inscription
+    defaults: { _controller: AppBundle:Inscription:index }
+
 presentation:
     path:     /presentation
     defaults: { _controller: AppBundle:Presentation:index }
