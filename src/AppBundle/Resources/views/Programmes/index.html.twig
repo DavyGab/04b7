@@ -9,9 +9,9 @@
                 <h2 class="title" style="color: rgb(0, 175, 255); font-size: 39px; line-height: 53px; margin-bottom: 0px; margin-top: 0px; font-family: Satisfy;">Inscris toi à l'une de nos offres</h2>
             </div>
             <div class="container-fluid backWhite pad10bt">
-                <div class="col-md-10 col-md-offset-1">
-                    <div class="col-sm-4">
-                        <div class="pricing-table pt-light pt-light-active">
+                <div class="col-md-10 col-md-offset-1 row-height">
+                    <div class="col-sm-4 col-height">
+                        <div class="pricing-table pt-light pt-light-active inside inside-full-height">
                             <h4 class="dark-bg">Pack light<span>18 heures - 450€</span></h4>
                             <ul class="benefits-list">
                                 <li>Partage d'expérience d'étudiants présélectionnés selon ton profil</li>
@@ -19,11 +19,13 @@
                                 <li>Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur</li>
                                 <li>Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme</li>
                             </ul>
+                            <div class="contain-btn">
                                 <button href="#" id="btn-light" class="btn btn-light">Plus de détails</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                        <div class="pricing-table pt-full">
+                    <div class="col-sm-4 col-height">
+                        <div class="pricing-table pt-full pt-full-active inside inside-full-height">
                             <h4 class="dark-bg">Pack full<span>24 heures - 650€</span></h4>
                             <ul class="benefits-list">
                                 <li>Immersion dans un établissement partenaire (Dauphine, école de commerce, universités, ...)</li>
@@ -33,207 +35,227 @@
                                 <li>Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur</li>
                                 <li>Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme</li>
                             </ul>
-                            <button href="#" id="btn-full" class="btn btn-full">Plus de détails</button>
+                            <div class="contain-btn" style="position: relative;">
+                                <button href="#" id="btn-full" class="btn btn-full">Plus de détails</button>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-4">
-                    <div class="pricing-table pt-sur-mesure">
-                        <h4 class="dark-bg">Pack sur-Mesure<span>26 heures - 1000€</span><span style=" font-size: 0.8em;">après abattement fiscal</span></h4>
+                    <div class="col-sm-4 col-height">
+                    <div class="pricing-table pt-sur-mesure pt-sur-mesure-active inside inside-full-height">
+                        <h4 class="dark-bg">Pack sur-Mesure<span>26 heures - 2000€</span></h4>
                         <ul class="benefits-list">
                             <li>Entretiens individualisés à domicile pour un suivi personnalisé</li>
-                            <li>Immersion dans un établissement partenaire (Dauphine, école de commerce, universités, ...)</li>
-                            <li>Rencontre de professionnels expérimentés</li>
                             <li>Partage d'expérience d'étudiants présélectionnés selon ton profil</li>
                             <li>Partage d'expérience avec desjeunes diplômés</li>
                             <li>Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur</li>
                             <li>Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme</li>
                         </ul>
-                        <button href="#" id="btn-sur-mesure" class="btn btn-sur-mesure">Plus de détails</button>
+                        <div class="contain-btn">
+                            <button href="#" id="btn-sur-mesure" class="btn btn-sur-mesure">Plus de détails</button>
+                        </div>
                     </div>
                 </div>
                 </div>
             </div>
         </section>
-        <section id="detail-light" class="section cover-bg text-center pad10bt" style="padding: 0; font-family: 'helvetica';">
-            <div class="text-center">
-                <img class="down_arrow" src="{{ asset('bundles/app/images/down_arrow.png') }}">
+        <section id="detail-light" class="section cover-bg text-center pad10bt" style="display:none; padding: 0;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="text-center">
+                            <img class="down_arrow" src="{{ asset('bundles/app/images/down_arrow.png') }}">
+                        </div>
+                        <div class="editContent">
+                            <h2 class="title" style="color: #73a4ea; font-size: 44px; margin-bottom: 0px; margin-top: 0px; font-family: Satisfy;">Détails pack light</h2>
+                            <h2 class="title" style="color: rgb(162, 162, 162); font-size: 20px; margin-bottom: 0px; margin-top: 0px;">4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h.</h2>
+                        </div>
+                        <div class="margT30">
+                            <ol id="feature-list">
+                                <li>
+                                    <div class="feature-left" style="color: #73a4ea;">1h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Entretien préliminaire</h4>
+                                            <p>Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #73a4ea;">9h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Expériences Etudiants/Diplomés</h4>
+                                            <p>Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #73a4ea;">6h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Techniques d'aide à la décision</h4>
+                                            <p>Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #73a4ea;">3h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Conférence APB</h4>
+                                            <p>Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
+                        </div>
+                        <hr class="prog">
+                        <div class="text-center">
+                            <a href="{{ path('inscription') }}" class="btn btn-primary btn-inscription">S'inscrire</a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="editContent">
-                <h2 class="title" style="color: #73a4ea; font-size: 44px; margin-bottom: 0px; margin-top: 0px; font-family: Satisfy;">Détails pack light</h2>
-                <h2 class="title" style="color: rgb(162, 162, 162); font-size: 20px; margin-bottom: 0px; margin-top: 0px;">4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h.</h2>
-            </div>
-            <div class="margT30">
-                <ol id="feature-list">
-                    <li>
-                        <div class="feature-left" style="color: #73a4ea;">1h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Entretien préliminaire</h4>
-                                <p>Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin</p>
-                            </div>
+        </section>
+        <section id="detail-full" class="section cover-bg text-center pad10bt" style="display:none; padding: 0;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="text-center">
+                            <img class="down_arrow" src="{{ asset('bundles/app/images/down_arrow.png') }}">
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #73a4ea;">9h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Expériences Etudiants/Diplomés</h4>
-                                <p>Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti</p>
-                            </div>
+                        <div class="editContent">
+                            <h2 class="title" style="color: #b176d1; font-size: 44px; margin-bottom: 0px; margin-top: 0px; font-family: Satisfy;">Détails pack full</h2>
+                            <h2 class="title" style="color: rgb(162, 162, 162); font-size: 20px; margin-bottom: 0px; margin-top: 0px;">4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h.</h2>
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #73a4ea;">6h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Techniques d'aide à la décision</h4>
-                                <p>Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur</p>
-                            </div>
+                        <div class="margT30">
+                            <ol id="feature-list">
+                                <li>
+                                    <div class="feature-left" style="color: #b176d1;">1h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Entretien préliminaire</h4>
+                                            <p>Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #b176d1;">9h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Expériences Etudiants/Diplomés</h4>
+                                            <p>Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #b176d1;">6h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Techniques d'aide à la décision</h4>
+                                            <p>Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #b176d1;">3h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Conférence APB</h4>
+                                            <p>Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #b176d1;">3h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Immersion dans un établissement partenaire</h4>
+                                            <p>Suit un cours à Dauphine, en prépa, école de commerce, en école d'ingénieur ou à l'université pour découvrir ce qu'il se passe vraiment</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #b176d1;">3h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Rencontre de professionnels</h4>
+                                            <p>Pose toutes tes questions à des professionnels du métier de ton choix pour connaître leurs parcours ainsi que les réalités de leur métier</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #73a4ea;">3h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Conférence APB</h4>
-                                <p>Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB</p>
-                            </div>
-                        </div>
-                    </li>
-                </ol>
+                    </div>
+                </div>
             </div>
             <hr class="prog">
             <div class="text-center">
                 <a href="{{ path('inscription') }}" class="btn btn-primary btn-inscription">S'inscrire</a>
             </div>
         </section>
-        <section id="detail-full" class="section cover-bg text-center pad10bt" style="display:none; padding: 0; font-family: 'helvetica';">
-            <div class="text-center">
-                <img class="down_arrow" src="{{ asset('bundles/app/images/down_arrow.png') }}">
-            </div>
-            <div class="editContent">
-                <h2 class="title" style="color: #b176d1; font-size: 44px; margin-bottom: 0px; margin-top: 0px; font-family: Satisfy;">Détails pack full</h2>
-                <h2 class="title" style="color: rgb(162, 162, 162); font-size: 20px; margin-bottom: 0px; margin-top: 0px;">4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h.</h2>
-            </div>
-            <div class="margT30">
-                <ol id="feature-list">
-                    <li>
-                        <div class="feature-left" style="color: #b176d1;">1h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Entretien préliminaire</h4>
-                                <p>Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin</p>
-                            </div>
+        <section id="detail-sur-mesure" class="section cover-bg text-center pad10bt" style="display:none; padding: 0;">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <div class="text-center">
+                            <img class="down_arrow" src="{{ asset('bundles/app/images/down_arrow.png') }}">
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #b176d1;">9h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Expériences Etudiants/Diplomés</h4>
-                                <p>Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti</p>
-                            </div>
+                        <div class="editContent">
+                            <h2 class="title" style="color: #fabe9a; font-size: 44px; margin-bottom: 0px; margin-top: 0px; font-family: Satisfy;">Détails pack sur-mesure</h2>
+                            <h2 class="title" style="color: rgb(162, 162, 162); font-size: 20px; margin-bottom: 0px; margin-top: 0px;">4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h.</h2>
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #b176d1;">6h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Techniques d'aide à la décision</h4>
-                                <p>Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur</p>
-                            </div>
+                        <div class="margT30">
+                            <ol id="feature-list">
+                                <li>
+                                    <div class="feature-left" style="color: #fabe9a;">1h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Entretien préliminaire</h4>
+                                            <p>Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #fabe9a;">9h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Expériences Etudiants/Diplomés</h4>
+                                            <p>Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #fabe9a;">6h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Techniques d'aide à la décision</h4>
+                                            <p>Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #fabe9a;">3h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Conférence APB</h4>
+                                            <p>Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="feature-left" style="color: #fabe9a;">3h</div>
+                                    <div class="feature-info-flex">
+                                        <div class="feature-info">
+                                            <h4 style="margin: 0">Entretiens individualisés</h4>
+                                            <p>Ateliers particuliers à ton domicile avec le directeur d'Excelience pour t'accompagner au mieux dans ta prise de décision</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ol>
                         </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #b176d1;">3h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Conférence APB</h4>
-                                <p>Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #b176d1;">3h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Immersion dans un établissement partenaire</h4>
-                                <p>Suit un cours à Dauphine, en prépa, école de commerce, en école d'ingénieur ou à l'université pour découvrir ce qu'il se passe vraiment</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #b176d1;">3h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Rencontre de professionnels</h4>
-                                <p>Pose toutes tes questions à des professionnels du métier de ton choix pour connaître leurs parcours ainsi que les réalités de leur métier</p>
-                            </div>
-                        </div>
-                    </li>
-                </ol>
-            </div>
-            <hr class="prog">
-            <div class="text-center">
-                <a href="{{ path('inscription') }}" class="btn btn-primary btn-inscription">S'inscrire</a>
-            </div>
-        </section>
-        <section id="detail-sur-mesure" class="section cover-bg text-center pad10bt" style="display:none; padding: 0; font-family: 'helvetica';">
-            <div class="text-center">
-                <img class="down_arrow" src="{{ asset('bundles/app/images/down_arrow.png') }}">
-            </div>
-            <div class="editContent">
-                <h2 class="title" style="color: #fabe9a; font-size: 44px; margin-bottom: 0px; margin-top: 0px; font-family: Satisfy;">Détails pack sur-mesure</h2>
-                <h2 class="title" style="color: rgb(162, 162, 162); font-size: 20px; margin-bottom: 0px; margin-top: 0px;">4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h.</h2>
-            </div>
-            <div class="margT30">
-                <ol id="feature-list">
-                    <li>
-                        <div class="feature-left" style="color: #fabe9a;">1h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Entretien préliminaire</h4>
-                                <p>Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #fabe9a;">9h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Expériences Etudiants/Diplomés</h4>
-                                <p>Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #fabe9a;">6h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Techniques d'aide à la décision</h4>
-                                <p>Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #fabe9a;">3h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Conférence APB</h4>
-                                <p>Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li>
-                        <div class="feature-left" style="color: #fabe9a;">3h</div>
-                        <div class="feature-info-flex">
-                            <div class="feature-info">
-                                <h4 style="margin: 0">Entretiens individualisés</h4>
-                                <p>Ateliers particuliers à ton domicile avec le directeur d'Excelience pour t'accompagner au mieux dans ta prise de décision</p>
-                            </div>
-                        </div>
-                    </li>
-                </ol>
+                    </div>
+                </div>
             </div>
             <hr class="prog">
             <div class="text-center">

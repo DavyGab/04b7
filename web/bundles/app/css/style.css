@@ -3,7 +3,7 @@
 -----------------------------------------------------------------------------------------*/
 
 body {
-	font-family: 'Helvetica Neue', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 17px;
 	font-weight: lighter;
 	line-height: 1.5;
@@ -2027,7 +2027,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	letter-spacing: 2px;
 	font-size: 25px;
 	color: white;
-	font-family: Satisfy;
+	font-family: 'Satisfy', cursive;
 }
 
 .navbar .login-panel {
@@ -2579,18 +2579,16 @@ nav.navbar .container {
 
 .benefits-list {
 	display: inline-block;
-	margin: 10px 20px;
+	margin: 10px 20px 0px;
 	text-align: left;
 }
 
 .pricing-table .btn {
 	display: block;
-	margin: 0 35px 35px 35px;
-	padding: 12px;
 }
 
 .benefits-list li {
-	font-family: helvetica;
+	font-family: 'Source Sans Pro', sans-serif;
 	padding: 4px 0px;
 	font-size: 14px;
 	list-style-type: initial;
@@ -3526,7 +3524,7 @@ h2.text-ee {
 	width: 100px;
 	border: 1px solid #04adf6;
 	border-radius: 50%;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Source Sans Pro', sans-serif;
 	font-weight: 100;
 	text-align: center;
 	line-height: 100px;
@@ -3587,8 +3585,8 @@ h2.text-ee {
 }
 
 .feature-left {
-	font-size: 27px;
-	font-family: satisfy;
+	font-size: 30px;
+	font-family: 'Satisfy', cursive;
 }
 
 .btn-inscription {
@@ -3598,6 +3596,15 @@ hr.prog {
 	margin: 0 20%;
 }
 
+.contain-btn {
+	width:100%;
+	padding: 24px;
+	position: absolute;
+	bottom:0;
+}
+.btn-light, .btn-full, .btn-sur-mesure {
+	width:100%;
+}
 .pt-light, .pt-full, .pt-sur-mesure {
 	background-color: #eaeaea;
 }
@@ -3611,8 +3618,6 @@ hr.prog {
 .pricing-table .btn-light, .pricing-table .btn-full, .pricing-table .btn-sur-mesure {
 	border-color: #cbcbcb;
 	background-color: transparent;
-	margin: auto;
-	margin-bottom: 20px;
 }
 
 .pt-light:hover h4, .pt-light-active h4 {
@@ -3639,4 +3644,121 @@ hr.prog {
 
 .down_arrow {
 	width: 75px;
+}
+
+.inside {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.inside-full-height {
+	height: 100%;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.row-height {
+	display: table;
+	table-layout: fixed;
+	height: 100%;
+}
+.col-height {
+	display: table-cell;
+	float: none;
+	height: 100%;
+}
+.col-top {
+	vertical-align: top;
+}
+.col-middle {
+	vertical-align: middle;
+}
+.col-bottom {
+	vertical-align: bottom;
+}
+
+@media (min-width: 480px) {
+	.row-xs-height {
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+	}
+	.col-xs-height {
+		display: table-cell;
+		float: none;
+		height: 100%;
+	}
+	.col-xs-top {
+		vertical-align: top;
+	}
+	.col-xs-middle {
+		vertical-align: middle;
+	}
+	.col-xs-bottom {
+		vertical-align: bottom;
+	}
+}
+
+@media (min-width: 768px) {
+	.row-sm-height {
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+	}
+	.col-sm-height {
+		display: table-cell;
+		float: none;
+	}
+	.col-sm-top {
+		vertical-align: top;
+	}
+	.col-sm-middle {
+		vertical-align: middle;
+	}
+	.col-sm-bottom {
+		vertical-align: bottom;
+	}
+}
+
+@media (min-width: 992px) {
+	.row-md-height {
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+	}
+	.col-md-height {
+		display: table-cell;
+		float: none;
+		height: 100%;
+	}
+	.col-md-top {
+		vertical-align: top;
+	}
+	.col-md-middle {
+		vertical-align: middle;
+	}
+	.col-md-bottom {
+		vertical-align: bottom;
+	}
+}
+
+@media (min-width: 1200px) {
+	.row-lg-height {
+		display: table;
+		table-layout: fixed;
+		height: 100%;
+	}
+	.col-lg-height {
+		display: table-cell;
+		float: none;
+		height: 100%;
+	}
+	.col-lg-top {
+		vertical-align: top;
+	}
+	.col-lg-middle {
+		vertical-align: middle;
+	}
+	.col-lg-bottom {
+		vertical-align: bottom;
+	}
 }
