@@ -143,7 +143,8 @@ class User extends BaseUser
 
     /**
      * Get type
-     *
+     * 1 : lyceen
+     * 2 : étudiant
      * @return int
      */
     public function getType()
