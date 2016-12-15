@@ -3,7 +3,7 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Utilisateurs;
-use AppBundle\Form\UtilisateursType;
+use AppBundle\Form\EtudiantType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,14 +17,14 @@ class EspaceEtudiantController extends Controller
     {
         $utilisateur = new Utilisateurs();
         $utilisateur->setType(2);
-        $form = $this->createForm(new UtilisateursType(), $utilisateur);
+        $form = $this->createForm(new EtudiantType(), $utilisateur);
 
         if ($form->handleRequest($request)->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($utilisateur);
             $em->flush();
 
-            $request
+            $this
                 ->addFlash('success',
                     'Vos informations ont été enregistrées. Nous vous contacterons très vite.');
         }

@@ -131,6 +131,12 @@ class Utilisateurs
     private $cv;
 
     /**
+     * @var string
+     * @ORM\Column(name="bulletins_url", type="string", length=255, nullable=true)
+     */
+    private $bulletins;
+
+    /**
      * @Assert\File(
      *     maxSize = "1024k",
      *     mimeTypes = {"application/pdf", "application/x-pdf"},
@@ -139,25 +145,55 @@ class Utilisateurs
      */
     public $cvTempFile;
 
+    /**
+     * @Assert\File(
+     *     maxSize = "1024k",
+     *     mimeTypes = {"application/pdf", "application/x-pdf"},
+     *     mimeTypesMessage = "Merci d'uploader un cv au format PDF"
+     * )
+     */
+    public $bulletinsTempFile;
 
-    protected function getUploadDir()
+
+    protected function getCVUploadDir()
     {
         return 'uploads/cv';
     }
 
-    protected function getUploadRootDir()
+    protected function getCVUploadRootDir()
     {
-        return __DIR__.'/../../../web/'.$this->getUploadDir();
+        return __DIR__.'/../../../web/'.$this->getCVUploadDir();
     }
 
-    public function getWebPath()
+    public function getCVWebPath()
     {
-        return null === $this->cv ? null : $this->getUploadDir().'/'.$this->cv;
+        return null === $this->cv ? null : $this->getCVUploadDir().'/'.$this->cv;
     }
 
-    public function getAbsolutePath()
+    public function getCVAbsolutePath()
     {
-        return null === $this->cv ? null : $this->getUploadRootDir().'/'.$this->cv;
+        return null === $this->cv ? null : $this->getCVUploadRootDir().'/'.$this->cv;
+    }
+
+
+    protected function getBulletinsUploadDir()
+    {
+        return 'uploads/bulletins';
+    }
+
+    protected function getBulletinsUploadRootDir()
+    {
+        return __DIR__.'/../../../web/'.$this->getBulletinsUploadDir();
+    }
+
+    public function getBulletinsWebPath()
+    {
+        return null === $this->bulletins ? null : $this->getBulletinsUploadDir().'/'.$this->cv;
+    }
+
+    public function getBulletinsAbsolutePath()
+    {
+        return null === $this->bulletins ? null : $this->getBulletinsUploadRootDir().'/'.$this->cv;
     }
 
     /**
@@ -169,6 +205,10 @@ class Utilisateurs
             // do whatever you want to generate a unique name
             $this->cv = uniqid().'.'.$this->cvTempFile->guessExtension();
         }
+        if (null !== $this->bulletinsTempFile) {
+            // do whatever you want to generate a unique name
+            $this->bulletins = uniqid().'.'.$this->bulletinsTempFile->guessExtension();
+        }
     }
 
     /**
@@ -176,14 +216,16 @@ class Utilisateurs
      */
     public function upload()
     {
-        if (null === $this->cv) {
-            return;
+        if (null !== $this->cv) {
+            $this->cvTempFile->move($this->getCVUploadRootDir(), $this->cv);
+        }
+        if (null !== $this->bulletins) {
+            $this->bulletinsTempFile->move($this->getBulletinsUploadRootDir(), $this->bulletins);
         }
 
         // if there is an error when moving the file, an exception will
         // be automatically thrown by move(). This will properly prevent
         // the entity from being persisted to the database on error
-        $this->cvTempFile->move($this->getUploadRootDir(), $this->cv);
 
         //unlink($this->cvTempFile);
     }
@@ -193,7 +235,10 @@ class Utilisateurs
      */
     public function removeUpload()
     {
-        if ($file = $this->getAbsolutePath()) {
+        if ($file = $this->getCVAbsolutePath()) {
+            unlink($file);
+        }
+        if ($file = $this->getBulletinsAbsolutePath()) {
             unlink($file);
         }
     }

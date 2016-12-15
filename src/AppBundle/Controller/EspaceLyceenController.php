@@ -3,11 +3,9 @@
 namespace AppBundle\Controller;
 
 use AppBundle\Entity\Utilisateurs;
-use AppBundle\Form\UtilisateursType;
+use AppBundle\Form\LyceenType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
-use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 
 
 
@@ -17,14 +15,14 @@ class EspaceLyceenController extends Controller
     {
         $utilisateur = new Utilisateurs();
         $utilisateur->setType(1);
-        $form = $this->createForm(new UtilisateursType(), $utilisateur);
+        $form = $this->createForm(new LyceenType(), $utilisateur);
 
         if ($form->handleRequest($request)->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($utilisateur);
             $em->flush();
 
-            $request
+            $this
                 ->addFlash('success',
                     'Vos informations ont été enregistrées. Nous vous contacterons très vite.');
         }

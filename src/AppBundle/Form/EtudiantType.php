@@ -6,7 +6,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
-class UtilisateursType extends AbstractType
+class EtudiantType extends AbstractType
 {
     /**
      * {@inheritdoc}
@@ -23,7 +23,7 @@ class UtilisateursType extends AbstractType
             ->add('ecole')
             ->add('diplome')
             ->add('niveauDetude')
-            ->add('cvTempFile', 'file')
+            ->add('cvTempFile', 'file', array('required' => false))
             ->add('Envoyer', 'submit');
     }
     

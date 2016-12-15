@@ -65,23 +65,9 @@
                 </div>
 
                 <div class="form-group col-sm-6">
-                    {{ form_label(form.telephone, 'Téléphone :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
-                    <div class="col-sm-12">
-                        {{ form_widget(form.telephone, {'attr': {'class': 'form-control', 'placeholder': 'Téléphone'}}) }}
-                    </div>
-                </div>
-
-                <div class="form-group col-sm-6">
-                    {{ form_label(form.ecole, 'Ecole :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    {{ form_label(form.ecole, 'Etablissement :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
                     <div class="col-sm-12">
                         {{ form_widget(form.ecole, {'attr': {'class': 'form-control', 'placeholder': 'Ecole'}}) }}
-                    </div>
-                </div>
-
-                <div class="form-group col-sm-6">
-                    {{ form_label(form.diplome, 'Diplôme :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
-                    <div class="col-sm-12">
-                        {{ form_widget(form.diplome, {'attr': {'class': 'form-control', 'placeholder': 'Diplôme'}}) }}
                     </div>
                 </div>
 
@@ -93,9 +79,9 @@
                 </div>
 
                 <div class="form-group col-sm-6">
-                    {{ form_label(form.cvTempFile, 'Votre CV :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    {{ form_label(form.bulletinsTempFile, 'Bulletin de note (1ère et Term) :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
                     <div class="col-sm-12">
-                        {{ form_widget(form.cvTempFile) }}
+                        {{ form_widget(form.bulletinsTempFile) }}
                     </div>
                 </div>
 
