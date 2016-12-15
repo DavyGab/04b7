@@ -140,7 +140,7 @@ class Utilisateurs
      * @Assert\File(
      *     maxSize = "1024k",
      *     mimeTypes = {"application/pdf", "application/x-pdf"},
-     *     mimeTypesMessage = "Merci d'uploader un cv au format PDF"
+     *     mimeTypesMessage = "Merci d'uploader un CV au format PDF"
      * )
      */
     public $cvTempFile;
@@ -149,7 +149,7 @@ class Utilisateurs
      * @Assert\File(
      *     maxSize = "1024k",
      *     mimeTypes = {"application/pdf", "application/x-pdf"},
-     *     mimeTypesMessage = "Merci d'uploader un cv au format PDF"
+     *     mimeTypesMessage = "Merci d'uploader vos bulletins au format PDF"
      * )
      */
     public $bulletinsTempFile;

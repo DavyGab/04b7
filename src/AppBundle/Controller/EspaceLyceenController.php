@@ -6,7 +6,7 @@ use AppBundle\Entity\Utilisateurs;
 use AppBundle\Form\LyceenType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
-
+use Symfony\Component\HttpFoundation\Response;
 
 
 class EspaceLyceenController extends Controller
@@ -16,19 +16,18 @@ class EspaceLyceenController extends Controller
         $utilisateur = new Utilisateurs();
         $utilisateur->setType(1);
         $form = $this->createForm(new LyceenType(), $utilisateur);
+        $post = 'none';
 
         if ($form->handleRequest($request)->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($utilisateur);
             $em->flush();
-
-            $this
-                ->addFlash('success',
-                    'Vos informations ont été enregistrées. Nous vous contacterons très vite.');
+            $post = 'block';
         }
 
         return $this->render('AppBundle:EspaceLyceen:inscription.html.twig', array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'post' => $post
         ));
     }
 

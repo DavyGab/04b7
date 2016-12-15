@@ -3488,6 +3488,13 @@ ul.posts-line .post .title {
 	margin-bottom: 10px;
 }
 
+.margT15 {
+	margin-top: 15px;
+}
+.margB15 {
+	margin-bottom: 15px;
+}
+
 .margT30 {
 	margin-top: 30px;
 }
@@ -3761,4 +3768,15 @@ hr.prog {
 	.col-lg-bottom {
 		vertical-align: bottom;
 	}
+}
+
+#popup_inscr {
+	position: fixed;
+	top: 20%;
+	z-index: 2;
+	background-color: white;
+	border: 1px solid #c7c7c7;
+}
+.alert {
+	padding: 5px;
 }

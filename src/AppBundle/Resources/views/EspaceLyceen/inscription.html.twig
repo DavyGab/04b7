@@ -27,6 +27,19 @@
     </section>
     <section class="twenty-padding">
         <div class="row">
+            {% if not form.vars.valid %}
+            <div class="alert alert-danger col-sm-4 col-sm-offset-4">
+                <strong>Erreur !</strong>
+                {{ form_errors(form.nom) }}
+                {{ form_errors(form.prenom) }}
+                {{ form_errors(form.email) }}
+                {{ form_errors(form.codePostal) }}
+                {{ form_errors(form.ville) }}
+                {{ form_errors(form.ecole) }}
+                {{ form_errors(form.niveauDetude) }}
+                {{ form_errors(form.bulletinsTempFile) }}
+            </div>
+            {% endif %}
             <div class="col-sm-10 col-sm-offset-1">
                 {{ form_start(form) }}
                 <div class="form-group col-sm-6">
@@ -94,7 +107,27 @@
             </div>
         </div>
     </section>
+    <div id="popup_inscr" class="col-sm-4 col-sm-offset-4" style="display: {{ post }}">
+        <div class="text-center margT15">
+            <span class="fa-stack fa-2x" style="color: #6fd26f;">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-check fa-stack-1x"></i>
+            </span>
+        </div>
+        <div class="text-center"><h5 style="color: black;">Ta demande d'inscription a bien été prise en compte !</h5></div>
+        <div class="text-center margB15">
+            <p>Ta demande d’inscription a bien été prise en compte !</p>
+            <p>Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription et choisir les dates qui te conviennent.</p>
+            <p>Pour toutes questions, contacte-nous par mail à info@excelience.fr</p>
+            <button id="close_popup" class="btn btn-primary" style="background-color: #04adfd; color: white;">Fermer</button>
+        </div>
+    </div>
 {% endblock %}
 
 {% block javascripts %}
+    <script type="application/javascript">
+        $('#close_popup').click(function() {
+            $('#popup_inscr').hide();
+        });
+    </script>
 {% endblock %}
