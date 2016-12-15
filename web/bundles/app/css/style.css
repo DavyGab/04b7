@@ -186,15 +186,6 @@ hr {
 	background-color: rgba(0,0,0,0.2);
 }
 
-::selection {
-	background: white;
-	color: #fff;
-}
-::-moz-selection {
- background: white;
- color: #fff;
-}
-
 @media (max-width: 1200px) {
 section,
 header {
