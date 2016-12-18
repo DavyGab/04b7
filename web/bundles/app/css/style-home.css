@@ -2,18 +2,18 @@
     margin: 0;
 }
 .nav-tabs-round > li.active > a, .nav-tabs-round > li.active > a:hover, .nav-tabs-round > li.active > a:focus {
-    color: white;
+    color: rgb(0, 175, 255);
 }
 
 .nav-tabs li.active a,
 .nav-tabs li.active a:hover,
 .nav-tabs li.active a:focus {
-    color: white;
+    color: rgb(0, 175, 255);
 }
 
 @media (min-width: 992px) {
     .navbar .nav li a {
-        color: rgba(255, 255, 255, 0.75);
+        color: rgb(0, 175, 255);
     }
 }
 
@@ -22,15 +22,15 @@
 }
 
 .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-    color: white;
+    color: rgb(0, 175, 255);
 }
 
 .navbar .nav li a:hover, .navbar .nav li.active a {
-    color: white;
+    color: rgb(0, 175, 255);
 }
 
 nav.navbar {
-    background-color: transparent !important;
+    background-color: rgba(255, 255, 255, 0.85) !important;
 }
 
 .navbar .nav li:hover, .navbar .nav li.active {
