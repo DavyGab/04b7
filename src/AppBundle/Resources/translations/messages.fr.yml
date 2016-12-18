@@ -9,12 +9,12 @@ menu:
 
 
 home:
-    titre: Rencontre des étudiants pour décider ton orientation
+    titre: Rencontre des étudiants pour décider de ton orientation
     orientation:
         bouton: Espace Orientation
-        p1: Tu es lycéen et tu ne sais pas où t'inscrire après le bac.
-        p2: ou tu es étudiant et tu veux changer de voie.
+        p1: Tu es lycéen ou étudiant et tu te poses des questions
+        p2: concernant ton orientation
     etudiant:
-        bouton: Espace Etudiant
+        bouton: Espace Etudiants / Diplômés
         p1: Tu es étudiant ou diplomé et tu souhaites faire partager
-        p2: ton expérience de l'enseignement supérieur.
+        p2: ton expérience de l'enseignement supérieur

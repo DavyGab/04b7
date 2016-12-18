@@ -14,5 +14,6 @@ function onResize() {
 
     var top = ((w_height - $( "#text_home" ).height()) / 2);
     top = top < 70 ? 70 : top;
+    top = top - 30;
     $( "#text_home" ).css({ top: top  + 'px'});
 }
