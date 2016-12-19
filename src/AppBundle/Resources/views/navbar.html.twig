@@ -17,7 +17,7 @@
             </div>
             <button class="round-toggle navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse" data-selector="Footer"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
-        <div class="col-md-8 collapse navbar-collapse navMenuCollapse">
+        <div class="col-md-8 collapse navbar-collapse navMenuCollapse" style="float: right;">
             <ul class="nav">
                 <li data-selector="nav li" {% if app.request.get('_route') == 'presentation' %} class="active" {% endif %}><a href="{{ path('presentation') }}" data-selector="nav a">{{ "menu.presentation"|trans }}</a></li>
                 <li data-selector="nav li" {% if app.request.get('_route') == 'programmes' %} class="active" {% endif %}><a href="{{ path('programmes') }}" data-selector="nav a">{{ "menu.programmes"|trans }}</a></li>
