@@ -11,6 +11,10 @@ body {
 	background: #fff;
 }
 
+.textSatisfy {
+	font-family: 'Satisfy', cursive;
+}
+
 #wrap {
 	overflow: hidden;
 }
@@ -1900,12 +1904,6 @@ img.full-width {
 	width: 85px;
 }
 
-@media (max-width: 992px) {
-	.logo {
-		width: 60px;
-	}
-}
-
 nav.navbar {
 	border-radius: 0;
 	border: none;
@@ -1918,6 +1916,7 @@ nav.navbar {
 	transition: all 0.5s ease-in-out;
 	background-color: rgb(3, 169, 244);
 	top: 1%;
+	min-height: 81px;
 }
 .transparent-nav {
 	background-color: rgba(3, 169, 244, 0.55) !important;
@@ -1930,11 +1929,15 @@ nav.navbar {
 	line-height: 2em;
 	text-shadow: 0 0 2px #001c80;
 	font-size: 18px;
+	width: 189px;
+	float: right;
 }
 .titrenav2 {
 	line-height: 1em;
 	margin: auto;
 	font-size: 14px;
+	width: 189px;
+	float: right;
 }
 
 nav.navbar.dark-bg{
@@ -2023,7 +2026,12 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	letter-spacing: 0.05em;
 	font-weight: bolder;
 }
-
+@media (max-width: 1260px) {
+	.navbar .nav li a {
+		padding: 10px 6px;
+		font-size: 14px;
+	}
+}
 .navbar > .container .navbar-brand,
 .navbar > .container-fluid .navbar-brand {
 	line-height: 60px;
@@ -3512,6 +3520,10 @@ ul.posts-line .post .title {
 	margin-top: 75px;
 }
 
+.margT85 {
+	margin-top: 85px;
+}
+
 .backWhite {
 	background-color: white;
 }
@@ -3608,12 +3620,6 @@ hr.prog {
 	margin: 0 20%;
 }
 
-.contain-btn {
-	width:100%;
-	padding: 24px;
-	position: absolute;
-	bottom:0;
-}
 .btn-light, .btn-full, .btn-sur-mesure {
 	width:100%;
 }
@@ -3673,11 +3679,28 @@ hr.prog {
 	table-layout: fixed;
 	height: 100%;
 }
-.col-height {
-	display: table-cell;
-	float: none;
-	height: 100%;
+
+.contain-btn {
+	width:100%;
+	padding: 24px;
+	position: absolute;
+	bottom:0;
 }
+
+@media (min-width: 768px) {
+	.col-height {
+		display: table-cell;
+		float: none;
+		height: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.sm-relative {
+		position: relative;
+	}
+}
+
+
 .col-top {
 	vertical-align: top;
 }
@@ -3792,4 +3815,8 @@ hr.prog {
 	z-index: 2;
 	left: 50%;
 	transform: translate(-50%);
+}
+
+.blueText {
+	color: rgb(0, 175, 255) !important;
 }
