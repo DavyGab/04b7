@@ -3,6 +3,7 @@
 namespace AppBundle\Form;
 
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -21,6 +22,13 @@ class LyceenType extends AbstractType
             ->add('ville')
             ->add('ecole')
             ->add('niveauDetude')
+            ->add('offre', ChoiceType::class, array(
+                'choices'  => array(
+                    1 =>'Pack Light',
+                    2 => 'Pack Full',
+                    3 => 'Pack Sur mesure',
+                ),
+            ))
             ->add('bulletinsTempFile', 'file', array('required' => false))
             ->add('Envoyer', 'submit');
     }

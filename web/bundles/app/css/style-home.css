@@ -36,3 +36,8 @@ nav.navbar {
 .navbar .nav li:hover, .navbar .nav li.active {
     background-color: transparent !important;
 }
+
+.blueBackground-home {
+    background-color: transparent !important;
+    border: 1px solid white;
+}

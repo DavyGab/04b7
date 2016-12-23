@@ -1900,6 +1900,10 @@ img.full-width {
 						MAIN NAVIGATION STYLES
 ----------------------------------------------------------------------------------------*/
 
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
+	background-color: inherit;
+}
+
 .logo {
 	width: 85px;
 }
@@ -2025,6 +2029,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
 	font-weight: bolder;
+	cursor: pointer;
 }
 @media (max-width: 1260px) {
 	.navbar .nav li a {
@@ -2171,6 +2176,11 @@ nav.navbar .container {
 		/*background-color: white;*/
 	/*}*/
 }
+
+.blueBackground {
+	background-color: #03a9f4;
+}
+
 /*----------------------------------------------------------------------------------------
 						INTRO STYLES
 ----------------------------------------------------------------------------------------*/

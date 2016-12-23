@@ -18,19 +18,32 @@ class EspaceEtudiantController extends Controller
         $utilisateur = new Utilisateurs();
         $utilisateur->setType(2);
         $form = $this->createForm(new EtudiantType(), $utilisateur);
+        $post = 'none';
 
         if ($form->handleRequest($request)->isValid()) {
             $em = $this->getDoctrine()->getManager();
             $em->persist($utilisateur);
             $em->flush();
+            $post = 'block';
 
-            $this
-                ->addFlash('success',
-                    'Vos informations ont été enregistrées. Nous vous contacterons très vite.');
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Confirmation d\'inscription')
+                ->setFrom($this->container->getParameter('no_reply'))
+                ->setTo($utilisateur->getEmail())
+                ->setBody(
+                    $this->renderView(
+                        'AppBundle:EspaceEtudiant:mailInscription.html.twig',
+                        array('prenom' => $utilisateur->getPrenom())
+                    ),
+                    'text/html'
+                )
+            ;
+            $this->get('mailer')->send($message);
         }
 
         return $this->render('AppBundle:EspaceEtudiant:index.html.twig', array(
-            'form' => $form->createView()
+            'form' => $form->createView(),
+            'post' => $post
         ));
     }
 

@@ -108,7 +108,27 @@
             </div>
         </div>
     </section>
+    <div id="popup_inscr" class="col-sm-4 col-sm-offset-4" style="display: {{ post }}">
+        <div class="text-center margT15">
+            <span class="fa-stack fa-2x" style="color: #6fd26f;">
+                <i class="fa fa-circle-thin fa-stack-2x"></i>
+                <i class="fa fa-check fa-stack-1x"></i>
+            </span>
+        </div>
+        <div class="text-center"><h5 style="color: black;">Ta demande d'inscription a bien été prise en compte !</h5></div>
+        <div class="text-center margB15">
+            <p>Ta demande d’inscription a bien été prise en compte !</p>
+            <p>Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.</p>
+            <p>Pour toutes questions, contacte-nous par mail à info@excelience.fr</p>
+            <button id="close_popup" class="btn btn-primary" style="background-color: #04adfd; color: white;">Fermer</button>
+        </div>
+    </div>
 {% endblock %}
 
 {% block javascripts %}
+    <script type="application/javascript">
+        $('#close_popup').click(function() {
+            $('#popup_inscr').hide();
+        });
+    </script>
 {% endblock %}

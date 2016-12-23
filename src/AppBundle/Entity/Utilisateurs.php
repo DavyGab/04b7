@@ -123,6 +123,13 @@ class Utilisateurs
      * @ORM\Column(name="niveau_detude", type="string", length=255, nullable=true)
      */
     private $niveauDetude;
+    
+    /**
+     * @var int
+     *
+     * @ORM\Column(name="offre", type="integer", nullable=true)
+     */
+    private $offre;
 
     /**
      * @var string
@@ -491,5 +498,21 @@ class Utilisateurs
     public function setType($type)
     {
         $this->type = $type;
+    }
+
+    /**
+     * @return int
+     */
+    public function getOffre()
+    {
+        return $this->offre;
+    }
+
+    /**
+     * @param int $offre
+     */
+    public function setOffre($offre)
+    {
+        $this->offre = $offre;
     }
 }

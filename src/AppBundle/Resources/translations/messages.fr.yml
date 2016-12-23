@@ -1,4 +1,4 @@
-
+# Menu
 menu:
     presentation: Présentation
     programmes: Nos programmes
@@ -7,7 +7,7 @@ menu:
     temoignages: Témoignages
     blog: Blog
 
-
+# Page d'accueil
 home:
     titre: Rencontre des étudiants pour décider de ton orientation
     orientation:
@@ -18,3 +18,87 @@ home:
         bouton: Espace Etudiants / Diplômés
         p1: Tu es étudiant ou diplomé et tu souhaites faire partager
         p2: ton expérience de l'enseignement supérieur
+
+# Page Présentation
+presentation:
+    bloc_1:
+        titre: Décider pour d'orienter
+        texte: Excelience te permet de décider ton orientation et d'atteindre ton objectif en bénéficiant des différentes expériences d'étudiants de grandes écoles, d'universités ou autres
+        bouton: Je m'inscris
+    bloc_2:
+        titre: Toi aussi rejoins Excelience si :
+        p1: Tu ne sais pas où t'inscrire après le BAC
+        p2: Tu ne penses pas avoir le niveau scolaire pour rejoindre la formation de tes rêves
+        p3: Tu souhaites changer de voie
+        bouton: Je m'inscris
+    bloc_3:
+        titre: Rencontre des étudiants sélectionnés selon ton profil
+        texte: Des étudiants qui ont vécu les mêmes difficultés que toi, ont eu les mêmes doutes et qui sont aujourd'hui dans la formation que tu souhaites rejoindre
+        p1: Clarifie tes besoins et attentes avec l'équipe Excelience
+        p2: Inscris toi à l'une de nos offres
+        p3: Assiste à nos ateliers et obtient la réponse à toutes tes interrogations
+    bloc_4:
+        titre: Gagne du temps et de l'énergie !
+        i1: 4644
+        p1: établissements différents existent en France, dès lors comment faire un choix qui te corresponde ?
+        i2: 30%
+        p2: des étudiants se réorientent dès la première année d'étude, ce qui génère un stress et des efforts supplémentaires à réaliser pour rattraper le temps perdu
+        texte: Excelience te propose ainsi un accompagnement complet dans ta prise de décision pour t'éviter les erreurs d'orientation et te faire gagner du temps et de l'énergie
+        bouton: Découvrir les programmes
+
+# Page Nos Programmes
+programmes:
+    titre: Inscris toi à l'une de nos offres
+    pack_1:
+        titre: Pack light
+        duree: 18 heures
+        prix: 450€
+        p1: Partage d'expérience d'étudiants présélectionnés selon ton profil
+        p2: Partage d'expérience avec desjeunes diplômés
+        p3: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
+        p4: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        details:
+            sousTitre: 4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h
+            t1: Entretien préliminaire
+            i1: 1h
+            p1: Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin
+            t2: Techniques d'aide à la décision
+            i2: 6h
+            p2: Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
+            t3: Expériences Etudiants/Diplomés
+            i3: 9h
+            p3: Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti
+            t4: Conférence APB
+            i4: 3h
+            p4: Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB
+
+    pack_2:
+        titre: Pack full
+        duree: 24 heures
+        prix: 650€
+        p1: Immersion dans un établissement partenaire (Dauphine, école de commerce, universités, ...)
+        p2: Rencontre de professionnels expérimentés
+        p3: Partage d'expérience d'étudiants présélectionnés selon ton profil
+        p4: Partage d'expérience avec desjeunes diplômés
+        p5: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
+        p6: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        details:
+            sousTitre: 6 ateliers la semaine en fin d’après-midi et 2 ateliers le week-end pour un total de 24 heures
+            t1: Entretien préliminaire
+            i1: 1h
+            p1: Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin
+            t2: Techniques d'aide à la décision
+            i2: 6h
+            p2: Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
+            t3: Immersion dans un établissement partenaire
+            i3: 3h
+            p3: Suit un cours à Dauphine, en prépa, école de commerce, en école d'ingénieur ou à l'université pour découvrir ce qu'il se passe vraiment
+            t4: Expériences Etudiants/Diplomés
+            i4: 9h
+            p4: Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti
+            t5: Conférence APB
+            i5: 3h
+            p5: Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB
+            t6: Rencontre de professionnels
+            i6: 3h
+            p6: Pose toutes tes questions à des professionnels du métier de ton choix pour connaître leurs parcours ainsi que les réalités de leur métier

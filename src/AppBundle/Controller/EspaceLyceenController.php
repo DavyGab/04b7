@@ -23,6 +23,24 @@ class EspaceLyceenController extends Controller
             $em->persist($utilisateur);
             $em->flush();
             $post = 'block';
+
+            $info = $this->get('app.info');
+
+            $message = \Swift_Message::newInstance()
+                ->setSubject('Confirmation d\'inscription')
+                ->setFrom($this->container->getParameter('no_reply'))
+                ->setTo($utilisateur->getEmail())
+                ->setBody(
+                    $this->renderView(
+                        'AppBundle:EspaceLyceen:mailInscription.html.twig',
+                        array(
+                            'prenom' => $utilisateur->getPrenom(),
+                            'offre' => $info->getOffreNom($utilisateur->getOffre())
+                        )
+                    ),
+                    'text/html'
+                );
+            $this->get('mailer')->send($message);
         }
 
         return $this->render('AppBundle:EspaceLyceen:inscription.html.twig', array(
