@@ -26,7 +26,7 @@ presentation:
         texte: Excelience te permet de décider ton orientation et d'atteindre ton objectif en bénéficiant des différentes expériences d'étudiants de grandes écoles, d'universités ou autres
         bouton: Je m'inscris
     bloc_2:
-        titre: Toi aussi rejoins Excelience si :
+        titre: "Toi aussi rejoins Excelience si :"
         p1: Tu ne sais pas où t'inscrire après le BAC
         p2: Tu ne penses pas avoir le niveau scolaire pour rejoindre la formation de tes rêves
         p3: Tu souhaites changer de voie
@@ -57,7 +57,10 @@ programmes:
         p2: Partage d'expérience avec desjeunes diplômés
         p3: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
         p4: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        bouton: Je m'inscris !
         details:
+            plus: Plus de détails
+            titre: Détails Pack light
             sousTitre: 4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h
             t1: Entretien préliminaire
             i1: 1h
@@ -82,7 +85,10 @@ programmes:
         p4: Partage d'expérience avec desjeunes diplômés
         p5: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
         p6: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        bouton: Je m'inscris !
         details:
+            plus: Plus de détails
+            titre: Détails Pack full
             sousTitre: 6 ateliers la semaine en fin d’après-midi et 2 ateliers le week-end pour un total de 24 heures
             t1: Entretien préliminaire
             i1: 1h
@@ -102,3 +108,33 @@ programmes:
             t6: Rencontre de professionnels
             i6: 3h
             p6: Pose toutes tes questions à des professionnels du métier de ton choix pour connaître leurs parcours ainsi que les réalités de leur métier
+
+    pack_3:
+        titre: Pack Sur Mesure
+        duree: 26 heures
+        prix: 2000€
+        p1: Entretiens individualisés à domicile pour un suivi personnalisé
+        p2: Partage d'expérience d'étudiants présélectionnés selon ton profil
+        p3: Partage d'expérience avec desjeunes diplômés
+        p4: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
+        p5: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        bouton: Je m'inscris !
+        details:
+            plus: Plus de détails
+            titre: Détails Pack Sur Mesure
+            sousTitre: 4 ateliers la semaine en fin d’après-midi, 2 ateliers le week-end et jusqu’à 4 entretiens individuels à domicile
+            t1: Entretien préliminaire
+            i1: 1h
+            p1: Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin
+            t2: Expériences Etudiants/Diplomés
+            i2: 9h
+            p2: Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti
+            t3: Techniques d'aide à la décision
+            i3: 6h
+            p3: Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
+            t4: Conférence APB
+            i4: 3h
+            p4: Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB
+            t5: Entretiens individualisés
+            i5: 3h
+            p5: Ateliers particuliers à ton domicile avec le directeur d'Excelience pour t'accompagner au mieux dans ta prise de décision

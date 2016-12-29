@@ -11,12 +11,12 @@
                 </div>
                 <div class="col-lg-6 col-lg-offset-0 col-md-5 col-md-offset-1">
                     <div class="editContent" style="margin-top: 10px;">
-                        <h2 class="title blueText textSatisfy" data-selector="h2" style="text-align: center; font-size: 50px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">Décider pour s'orienter</h2>
+                        <h2 class="title blueText textSatisfy" data-selector="h2" style="text-align: center; font-size: 50px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">{{ 'presentation.bloc_1.titre'|trans }}</h2>
                         <p data-selector="p" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0);">
-                            Excelience te permet de décider ton orientation et d'atteindre ton objectif en bénéficiant des différentes expériences d'étudiants de grandes écoles, d'universités ou autres
+                            {{ 'presentation.bloc_1.texte'|trans }}
                         </p>
                         <div class="text-center margT30">
-                            <a href="#" class="btn_page">Je m'inscris !</a>
+                            <a href="{{ path('inscription') }}" class="btn_page">{{ 'presentation.bloc_1.bouton'|trans }}</a>
                         </div>
                     </div>
                 </div>
@@ -30,25 +30,25 @@
                     <img class="screen" src="{{ asset('bundles/app/images/bg2_prez.png')}}" alt="" data-selector="img" style="text-align: center;max-width: 430px;margin-top: 35vh;width: 90%;transform: translateY(-50%);">
                 </div>
                 <div class="col-sm-7 col-sm-pull-5">
-                    <h2 class="title blueText textSatisfy" data-selector="h2" style="font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">Toi aussi rejoins Excelience si :</h2>
+                    <h2 class="title blueText textSatisfy" data-selector="h2" style="font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">{{ 'presentation.bloc_2.titre'|trans }}</h2>
                     <ul class="item-list-left item-list-small item-list">
                         <i class="fa fa-map-signs" data-selector=".icon" style="line-height: 30px;float:left; color: rgb(0, 0, 0); font-size: 48px; margin-right: 15px;"></i>
                         <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
-                            <h3 data-selector="h3" style="line-height: 30px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">Tu ne sais pas où t'inscrire après le BAC</h3>
+                            <h3 data-selector="h3" style="line-height: 30px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">{{ 'presentation.bloc_2.p1'|trans }}</h3>
 
                         </li>
                         <i class="fa fa-tasks" data-selector=".icon" style="line-height: 63px;float:left; color: rgb(0, 0, 0); font-size: 48px; margin-right: 15px;"></i>
                         <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
-                            <h3 data-selector="h3" style="line-height: 30px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">Tu ne penses pas avoir le niveau scolaire pour rejoindre la formation de tes rêves</h3>
+                            <h3 data-selector="h3" style="line-height: 30px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">{{ 'presentation.bloc_2.p2'|trans }}</h3>
 
                         </li>
                         <i class="fa fa-random" data-selector=".icon" style="line-height: 30px;float:left; color: rgb(0, 0, 0); font-size: 48px; margin-right: 15px;" ></i>
                         <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
-                            <h3 data-selector="h3" style="line-height: 30px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">Tu souhaites changer de voie</h3>
+                            <h3 data-selector="h3" style="line-height: 30px; color: rgb(0, 0, 0); font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 25px; margin-top: 0px;">{{ 'presentation.bloc_2.p3'|trans }}</h3>
 
                         </li>
                         <li style="margin-top: 20px; text-align: center;" data-selector=".item-list-right li, .item-list-left li, .item-list-center li">
-                            <a href="#" class="btn_page">Je m'inscris !</a>
+                            <a href="{{ path('inscription') }}" class="btn_page">{{ 'presentation.bloc_2.bouton'|trans }}</a>
                         </li>
                     </ul>
                 </div>
@@ -58,17 +58,17 @@
     <section id="benefits-grid" data-selector="section" style="background-image: none; background-color: rgba(0, 0, 0, 0); padding-top: 60px; padding-bottom: 100px; border-bottom-width: 1px; border-bottom-color: rgb(232, 232, 232); background-repeat: repeat; background-size: auto; background-attachment: scroll;">
         <div class="container text-center">
             <div class="editContent" data-selector="Footer">
-                <h2 class="title blueText textSatisfy" style="font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">Rencontre des étudiants sélectionnés selon ton profil</h2>
+                <h2 class="title blueText textSatisfy" style="font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">{{ 'presentation.bloc_3.titre'|trans }}</h2>
             </div>
             <div class="row" style="margin-bottom: 60px;">
                 <div class="col-sm-6 col-sm-offset-3 sep-bottom editContent" data-selector="Footer">
-                    <p data-selector="p" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0);">Des étudiants qui ont vécu les mêmes difficultés que toi, ont eu les mêmes doutes et qui sont aujourd'hui dans la formation que tu souhaites rejoindre</p>
+                    <p data-selector="p" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0);">{{ 'presentation.bloc_3.texte'|trans }}</p>
                 </div>
                 <div class="col-sm-4">
                     <ul class="item-list-left">
                         <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li" style="text-align: center; padding: 0px !important;">
                             <div class="step-num blueText" style="height: 85px; width: 85px; top: 0px; border: 2px solid rgb(0, 175, 255); border-radius: 50%; font-family: Roboto, sans-serif; text-align: center; overflow: hidden; line-height: 85px; font-weight: lighter; font-size: 36px; margin-left: auto; margin-right: auto; margin-bottom: 15px;" data-selector="Footer">1</div>
-                            <h3 data-selector="h3" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;">Clarifie tes besoins et attentes avec l'équipe Excelience</h3>
+                            <h3 data-selector="h3" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;">{{ 'presentation.bloc_3.p1'|trans }}</h3>
                         </li>
                     </ul>
                 </div>
@@ -76,7 +76,7 @@
                     <ul class="item-list-left">
                         <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li" style="text-align: center; padding: 0px !important;">
                             <div class="step-num blueText" style="height: 85px;width: 85px;margin-left: -50px;top: 0;border: 2px solid rgb(0, 175, 255);border-radius: 50%;font-family: 'Roboto', sans-serif;text-align: center;li;overflow: hidden;line-height: 85px;font-weight: lighter;font-size: 36px;margin-left: auto;margin-right: auto;margin-bottom: 15px;" data-selector="Footer">2</div>
-                            <h3 data-selector="h3" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;">Inscris toi à l'une de nos offres</h3>
+                            <h3 data-selector="h3" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;">{{ 'presentation.bloc_3.p2'|trans }}</h3>
                         </li>
                     </ul>
                 </div>
@@ -84,7 +84,7 @@
                     <ul class="item-list-left">
                         <li data-selector=".item-list-right li, .item-list-left li, .item-list-center li" style="text-align: center; padding: 0px !important;">
                             <div class="step-num blueText" style="height: 85px;width: 85px;margin-left: -50px;top: 0;border: 2px solid rgb(0, 175, 255);border-radius: 50%;font-family: 'Roboto', sans-serif;text-align: center;li;overflow: hidden;line-height: 85px;font-weight: lighter;font-size: 36px;margin-left: auto;margin-right: auto;margin-bottom: 15px;" data-selector="Footer">3</div>
-                            <h3 data-selector="h3" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;" src="images/screen-3b.png">Assiste à nos ateliers et obtient la réponse à toutes tes interrogations</h3>
+                            <h3 data-selector="h3" style="color: black; font-size: 23px; background-color: rgba(0, 0, 0, 0); margin-bottom: 0px; margin-top: 0px;" src="images/screen-3b.png">{{ 'presentation.bloc_3.p3'|trans }}</h3>
                         </li>
                     </ul>
                 </div>
@@ -92,7 +92,7 @@
         </div>
     </section><!-- BENEFITS GRID 2 BLOCK -->
     <section id="benefits-grid-2" class="bg-color1 dark-bg" data-selector="section" style="background-color: rgb(232, 247, 255); padding-top: 40px; padding-bottom: 60px; background-repeat: no-repeat; background-size: 270px; background-position: 100% 100%; background-image: url({{ asset('bundles/app/images/bg3_prez.png') }})">
-        <h2 class="title blueText text-center textSatisfy" style="font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">Gagne du temps et de l'énergie !</h2>
+        <h2 class="title blueText text-center textSatisfy" style="font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">{{ 'presentation.bloc_4.titre'|trans }}</h2>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12">
@@ -100,20 +100,20 @@
                         <div class="col-md-5 col-md-offset-1">
                             <div class="row">
                                 <div class="col-xs-2 row-eq-height blueText textSatisfy" style="text-align: right; font-size: 32px;">
-                                    4644
+                                    {{ 'presentation.bloc_4.i1'|trans }}
                                 </div>
                                 <div class="col-xs-10 row-eq-height" style="color: black;">
-                                    établissements différents existent en France, dès lors comment faire un choix qui te corresponde ?
+                                    {{ 'presentation.bloc_4.p1'|trans }}
                                 </div>
                             </div>
                         </div>
                         <div class="col-md-5">
                             <div class="row">
                                 <div class="col-xs-2 row-eq-height blueText textSatisfy" style="text-align: right; font-size: 32px;">
-                                    30%
+                                    {{ 'presentation.bloc_4.i2'|trans }}
                                 </div>
                                 <div class="col-xs-10 row-eq-height" style="color: black;">
-                                    des étudiants se réorientent dès la première année d'étude, ce qui génère un stress et des efforts supplémentaires à réaliser pour rattraper le temps perdu
+                                    {{ 'presentation.bloc_4.p2'|trans }}
                                 </div>
                             </div>
                         </div>
@@ -122,11 +122,11 @@
             </div>
             <div class="row" style="margin-top:30px">
                 <div class="col-md-8 col-md-offset-2 textSatisfy" style="text-align: center; color: black; font-size:1.3em;">
-                    Excelience te propose ainsi un accompagnement complet dans ta prise de décision pour t'éviter les erreurs d'orientation et te faire gagner du temps et de l'énergie
+                    {{ 'presentation.bloc_4.texte'|trans }}
                 </div>
             </div>
             <div class="col-md-12 text-center" style="margin-top: 35px;">
-                <a href="#" class="btn_page">Découvrir les programmes</a>
+                <a href="{{ path('inscription') }}" class="btn_page">{{ 'presentation.bloc_4.bouton'|trans }}</a>
             </div>
         </div>
     </section>
