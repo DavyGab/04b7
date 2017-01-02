@@ -6,14 +6,14 @@
     <section id="content-line-2" class="bg-color3 cover-bg text-center half-padding" style="height: 80vh;background: url('{{ asset('bundles/app/images/bg-inscription.jpg') }}') center 0 no-repeat fixed; background-size: cover;">
         <div style="height: 100%;display: flex;">
             <div style="margin: auto;">
-                <h1 style="font-family: 'Satisfy', cursive; color: white;">Je m'inscris</h1>
-                <p style="color: white;">Et je suis recontacté dans la journée pour être informé des dates disonibles</p>
+                <h1 style="font-family: 'Satisfy', cursive; color: white;">{{ 'espace_lyceen.titre'|trans }}</h1>
+                <p style="color: white;">{{ 'espace_lyceen.sousTitre'|trans }}</p>
             </div>
         </div>
     </section>
     <section id="content-line-2" class="bg-color3 cover-bg text-center ten-padding" style="height: 25%;background-color: #f3f3f3;">
         <div class="container">
-            <h3 class="text-ee2 zero-bottom">Remplis les champs ci-dessous et tu seras contacté dès que possible</h3>
+            <h3 class="text-ee2 zero-bottom">{{ 'espace_lyceen.form'|trans }}</h3>
         </div>
     </section>
     <section class="zero-padding">
@@ -78,6 +78,13 @@
                 </div>
 
                 <div class="form-group col-sm-6">
+                    {{ form_label(form.telephone, 'Téléphone :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
+                    <div class="col-sm-12">
+                        {{ form_widget(form.telephone, {'attr': {'class': 'form-control', 'placeholder': 'Téléphone'}}) }}
+                    </div>
+                </div>
+
+                <div class="form-group col-sm-6">
                     {{ form_label(form.ecole, 'Etablissement :', {'label_attr': {'class': 'control-label col-sm-12'}}) }}
                     <div class="col-sm-12">
                         {{ form_widget(form.ecole, {'attr': {'class': 'form-control', 'placeholder': 'Ecole'}}) }}
@@ -121,11 +128,11 @@
                 <i class="fa fa-check fa-stack-1x"></i>
             </span>
         </div>
-        <div class="text-center"><h5 style="color: black;">Ta demande d'inscription a bien été prise en compte !</h5></div>
+        <div class="text-center"><h5 style="color: black;">{{ 'espace_lyceen.popup.titre'|trans }}</h5></div>
         <div class="text-center margB15">
-            <p>Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription et choisir les dates qui te conviennent.</p>
-            <p>Pour toutes questions, contacte-nous par mail à info@excelience.fr</p>
-            <button id="close_popup" class="btn btn-primary" style="background-color: #04adfd; color: white;">Fermer</button>
+            <p>{{ 'espace_lyceen.popup.p1'|trans }}</p>
+            <p>{{ 'espace_lyceen.popup.p2'|trans }}</p>
+            <button id="close_popup" class="btn btn-primary" style="background-color: #04adfd; color: white;">{{ 'espace_lyceen.popup.bouton'|trans }}</button>
         </div>
     </div>
 {% endblock %}

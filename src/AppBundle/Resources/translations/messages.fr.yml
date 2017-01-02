@@ -138,3 +138,23 @@ programmes:
             t5: Entretiens individualisés
             i5: 3h
             p5: Ateliers particuliers à ton domicile avec le directeur d'Excelience pour t'accompagner au mieux dans ta prise de décision
+
+espace_etudiant:
+    titre: Avec Excelience, tu as la possibilité d'être rémunéré jusqu'à 50€/h pour partager ton expérience des études après le BAC à des lycéens et à des étudiants.
+    sousTitre: Aucun pré-requis n'est nécéssaire !
+    form: Remplis les champs ci-dessous et tu seras contacté dès que possible
+    popup:
+        titre: Ta demande d'inscription a bien été prise en compte !
+        p1: Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.
+        p2: Pour toutes questions, contacte-nous par mail à question@excelience.fr
+        bouton: Fermer
+
+espace_lyceen:
+    titre: Je m'inscris
+    sousTitre: Et je suis recontacté dans la journée pour être informé des dates disonibles
+    form: Remplis les champs ci-dessous et tu seras contacté dès que possible
+    popup:
+        titre: Ta demande d'inscription a bien été prise en compte !
+        p1: Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.
+        p2: Pour toutes questions, contacte-nous par mail à question@excelience.fr
+        bouton: Fermer

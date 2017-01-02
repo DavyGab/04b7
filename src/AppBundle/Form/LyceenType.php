@@ -20,6 +20,7 @@ class LyceenType extends AbstractType
             ->add('email')
             ->add('codePostal', 'text')
             ->add('ville')
+            ->add('telephone')
             ->add('ecole')
             ->add('niveauDetude')
             ->add('offre', ChoiceType::class, array(

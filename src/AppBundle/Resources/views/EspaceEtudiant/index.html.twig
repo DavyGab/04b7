@@ -7,13 +7,13 @@
     </section>
     <section id="content-line-2" class="bg-color3 cover-bg text-center ten-padding" style="height: 25%;background-color: #04adfd;">
         <div class="container">
-            <h3 class="text-ee zero-bottom">Avec Excelience, tu as la possibilité d'être rémunéré jusqu'à 50€/h pour partager ton expérience des études après le BAC à des lycéens et à des étudiants.</h3>
-            <h3 class="text-ee zero-bottom">Aucun pré-requis n'est nécéssaire !</h3>
+            <h3 class="text-ee zero-bottom">{{ 'espace_etudiant.titre'|trans }}</h3>
+            <h3 class="text-ee zero-bottom">{{ 'espace_etudiant.sousTitre'|trans }}</h3>
         </div>
     </section>
     <section id="content-line-2" class="bg-color3 cover-bg text-center ten-padding" style="height: 25%;background-color: #f3f3f3;">
         <div class="container">
-            <h3 class="text-ee2 zero-bottom">Remplis les champs ci-dessous et tu seras contacté dès que possible</h3>
+            <h3 class="text-ee2 zero-bottom">{{ 'espace_etudiant.form'|trans }}</h3>
         </div>
     </section>
     <section class="zero-padding">
@@ -115,11 +115,11 @@
                 <i class="fa fa-check fa-stack-1x"></i>
             </span>
         </div>
-        <div class="text-center"><h5 style="color: black;">Ta demande d'inscription a bien été prise en compte !</h5></div>
+        <div class="text-center"><h5 style="color: black;">{{ 'espace_etudiant.popup.titre'|trans }}</h5></div>
         <div class="text-center margB15">
-            <p>Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.</p>
-            <p>Pour toutes questions, contacte-nous par mail à info@excelience.fr</p>
-            <button id="close_popup" class="btn btn-primary" style="background-color: #04adfd; color: white;">Fermer</button>
+            <p>{{ 'espace_etudiant.popup.p1'|trans }}</p>
+            <p>{{ 'espace_etudiant.popup.p2'|trans }}</p>
+            <button id="close_popup" class="btn btn-primary" style="background-color: #04adfd; color: white;">{{ 'espace_etudiant.popup.bouton'|trans }}</button>
         </div>
     </div>
 {% endblock %}
