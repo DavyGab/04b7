@@ -54,7 +54,7 @@ programmes:
         duree: 18 heures
         prix: 450€
         p1: Partage d'expérience d'étudiants présélectionnés selon ton profil
-        p2: Partage d'expérience avec desjeunes diplômés
+        p2: Partage d'expérience avec des jeunes diplômés
         p3: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
         p4: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
         bouton: Je m'inscris !
@@ -67,7 +67,7 @@ programmes:
             p1: Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin
             t2: Techniques d'aide à la décision
             i2: 6h
-            p2: Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
+            p2: Conception de ta propre matrice de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
             t3: Expériences Etudiants/Diplomés
             i3: 9h
             p3: Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti
@@ -95,7 +95,7 @@ programmes:
             p1: Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin
             t2: Techniques d'aide à la décision
             i2: 6h
-            p2: Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
+            p2: Conception de ta propre matrice de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
             t3: Immersion dans un établissement partenaire
             i3: 3h
             p3: Suit un cours à Dauphine, en prépa, école de commerce, en école d'ingénieur ou à l'université pour découvrir ce qu'il se passe vraiment
@@ -131,7 +131,7 @@ programmes:
             p2: Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti
             t3: Techniques d'aide à la décision
             i3: 6h
-            p3: Conception de ta propre matric de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
+            p3: Conception de ta propre matrice de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
             t4: Conférence APB
             i4: 3h
             p4: Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB
