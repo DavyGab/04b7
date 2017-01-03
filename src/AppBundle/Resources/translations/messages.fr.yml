@@ -151,7 +151,7 @@ espace_etudiant:
 
 espace_lyceen:
     titre: Je m'inscris
-    sousTitre: Et je suis recontacté dans la journée pour être informé des dates disonibles
+    sousTitre: Et je suis recontacté dans la journée pour être informé des dates disponibles
     form: Remplis les champs ci-dessous et tu seras contacté dès que possible
     popup:
         titre: Ta demande d'inscription a bien été prise en compte !
