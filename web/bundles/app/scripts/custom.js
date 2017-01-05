@@ -80,4 +80,11 @@ $(document).ready(function() {
             $('.scroll-down').show();
         }
     });
+
+    $(".icon_social").hover(function () {
+       $(this).removeClass('BWicon');
+    }, function() {
+       $(this).addClass('BWicon');
+    });
+
 });

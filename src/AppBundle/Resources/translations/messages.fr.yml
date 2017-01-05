@@ -36,7 +36,7 @@ presentation:
         texte: Des étudiants qui ont vécu les mêmes difficultés que toi, ont eu les mêmes doutes et qui sont aujourd'hui dans la formation que tu souhaites rejoindre
         p1: Clarifie tes besoins et attentes avec l'équipe Excelience
         p2: Inscris toi à l'une de nos offres
-        p3: Assiste à nos ateliers et obtient la réponse à toutes tes interrogations
+        p3: Assiste à nos ateliers et obtiens la réponse à toutes tes interrogations
     bloc_4:
         titre: Gagne du temps et de l'énergie !
         i1: 4644
@@ -56,7 +56,7 @@ programmes:
         p1: Partage d'expérience d'étudiants présélectionnés selon ton profil
         p2: Partage d'expérience avec des jeunes diplômés
         p3: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
-        p4: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        p4: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
         bouton: Je m'inscris !
         details:
             plus: Plus de détails
@@ -84,7 +84,7 @@ programmes:
         p3: Partage d'expérience d'étudiants présélectionnés selon ton profil
         p4: Partage d'expérience avec des jeunes diplômés
         p5: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
-        p6: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        p6: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
         bouton: Je m'inscris !
         details:
             plus: Plus de détails
@@ -117,27 +117,27 @@ programmes:
         p2: Partage d'expérience d'étudiants présélectionnés selon ton profil
         p3: Partage d'expérience avec des jeunes diplômés
         p4: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
-        p5: Conférence questions-réponses site APB avec un spécialiste, concepteur de l'algorithme
+        p5: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
         bouton: Je m'inscris !
         details:
             plus: Plus de détails
             titre: Détails Pack Sur Mesure
             sousTitre: 4 ateliers la semaine en fin d’après-midi, 2 ateliers le week-end et jusqu’à 4 entretiens individuels à domicile
-            t1: Entretien préliminaire
-            i1: 1h
-            p1: Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin
+            t1: Entretiens individualisés
+            i1: 8h
+            p1: Ateliers particuliers à ton domicile avec le directeur d'Excelience pour t'accompagner au mieux dans ta prise de décision
             t2: Expériences Etudiants/Diplomés
             i2: 9h
             p2: Rencontre d'étudiants/diplomés choisis lors de l'entretien, qui te décriront précisément leur formation mais aussi leur vécu et ressenti
-            t3: Techniques d'aide à la décision
-            i3: 6h
-            p3: Conception de ta propre matrice de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
+            t3: Entretien préliminaire
+            i3: 1h
+            p3: Entretien avec un des membres de l'équipe Excelience pour cerner ton profil et les étudiants dont tu as besoin
             t4: Conférence APB
             i4: 3h
             p4: Conférence sur le site internet Admission PostBac avec l'un des spécialistes/concepteurs pour être incollable sur les stratégies APB
-            t5: Entretiens individualisés
-            i5: 8h
-            p5: Ateliers particuliers à ton domicile avec le directeur d'Excelience pour t'accompagner au mieux dans ta prise de décision
+            t5: Techniques d'aide à la décision
+            i5: 6h
+            p5: Conception de ta propre matrice de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
 
 espace_etudiant:
     titre: Avec Excelience, tu as la possibilité d'être rémunéré jusqu'à 50€/h pour partager ton expérience des études après le BAC à des lycéens et à des étudiants.
@@ -158,3 +158,12 @@ espace_lyceen:
         p1: Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.
         p2: Pour toutes questions, contacte-nous par mail à question@excelience.fr
         bouton: Fermer
+
+footer:
+    copyright: © Excelience 2017 | Tous droits réservés
+    mentions_legales: Mentions légales
+    cgv: CGV
+    telephone: (+33) (0)6 60 68 40 04
+    mail: question@excelience.fr
+    contact: Contacts
+    question: Une question ?

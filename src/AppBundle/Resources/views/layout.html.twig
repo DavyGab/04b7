@@ -21,6 +21,8 @@
             {% block body %}
             {% endblock %}
         </div>
+        {% include 'AppBundle::footer.html.twig' %}
+
         <script src="{{ asset('bundles/app/scripts/custom.js') }}"></script>
         {% block javascripts %}
         {% endblock %}
