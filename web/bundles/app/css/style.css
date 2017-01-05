@@ -3623,6 +3623,10 @@ h2.text-ee {
 	font-family: 'Satisfy', cursive;
 }
 
+.feature-info > h4 {
+    font-weight: bold;
+}
+
 .btn-inscription {
 	margin: 30px 0;
 }
