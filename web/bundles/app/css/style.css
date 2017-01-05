@@ -3854,6 +3854,10 @@ hr.prog {
 	font-size: 14px;
 }
 
+.underl {
+	text-decoration: underline;
+}
+
 .icon_social {
 	width: 35px;
 	margin-left: 30px;
