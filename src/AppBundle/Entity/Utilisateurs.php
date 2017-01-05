@@ -162,7 +162,7 @@ class Utilisateurs
     public $bulletinsTempFile;
 
 
-    protected function getCVUploadDir()
+    public function getCVUploadDir()
     {
         return 'uploads/cv';
     }
@@ -183,7 +183,7 @@ class Utilisateurs
     }
 
 
-    protected function getBulletinsUploadDir()
+    public function getBulletinsUploadDir()
     {
         return 'uploads/bulletins';
     }
@@ -514,5 +514,37 @@ class Utilisateurs
     public function setOffre($offre)
     {
         $this->offre = $offre;
+    }
+
+    /**
+     * @return string
+     */
+    public function getCv()
+    {
+        return $this->cv;
+    }
+
+    /**
+     * @param string $cv
+     */
+    public function setCv($cv)
+    {
+        $this->cv = $cv;
+    }
+
+    /**
+     * @return string
+     */
+    public function getBulletins()
+    {
+        return $this->bulletins;
+    }
+
+    /**
+     * @param string $bulletins
+     */
+    public function setBulletins($bulletins)
+    {
+        $this->bulletins = $bulletins;
     }
 }

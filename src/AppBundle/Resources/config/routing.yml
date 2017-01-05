@@ -19,5 +19,5 @@ programmes:
     defaults: { _controller: AppBundle:Programmes:index }
 
 liste_inscrits:
-    path:     /liste_inscrits
-    defaults: { _controller: AppBundle:EspaceEtudiant:liste }
+    path:     /admin/users
+    defaults: { _controller: AppBundle:Admin:users }

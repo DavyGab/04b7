@@ -3830,3 +3830,7 @@ hr.prog {
 .blueText {
 	color: rgb(0, 175, 255) !important;
 }
+
+#users_table {
+	font-size: 14px;
+}

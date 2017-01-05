@@ -1,0 +1,84 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+{% endblock %}
+{% block body %}
+    <div class="container" style="margin-top: 100px;">
+        <div class="row">
+            <div class="col-md-12">
+                <table id="users_table" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date</th>
+                <th>Email</th>
+                <th>Code Postal</th>
+                <th>Ville</th>
+                <th>Téléphone</th>
+                <th>Ecole</th>
+                <th>Diplome</th>
+                <th>Niveau d'étude</th>
+                <th>Offre</th>
+                <th>CV</th>
+                <th>Bulletin</th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Date</th>
+                <th>Email</th>
+                <th>Code Postal</th>
+                <th>Ville</th>
+                <th>Téléphone</th>
+                <th>Ecole</th>
+                <th>Diplome</th>
+                <th>Niveau d'étude</th>
+                <th>Offre</th>
+                <th>CV</th>
+                <th>Bulletin</th>
+            </tr>
+        </tfoot>
+        <tbody>
+        {% for user in users %}
+            <tr>
+                <td>{{ user.nom }}</td>
+                <td>{{ user.prenom }}</td>
+                <td>{{ user.created | date("d/m/Y") }}</td>
+                <td>{{ user.email }}</td>
+                <td>{{ user.codePostal }}</td>
+                <td>{{ user.ville }}</td>
+                <td>{{ user.telephone }}</td>
+                <td>{{ user.ecole }}</td>
+                <td>{{ user.diplome }}</td>
+                <td>{{ user.niveauDetude }}</td>
+                <td>{{ user.offre }}</td>
+                {% if user.cv != "" %}
+                    <td><a href="{{ app.request.schemeAndHttpHost }}/{{ user.getCVUploadDir }}/{{ user.cv }}">Ouvrir</a></td>
+                {% else %}
+                    <td></td>
+                {% endif %}
+                {% if user.bulletins != "" %}
+                    <td><a href="{{ app.request.schemeAndHttpHost }}/{{ user.getBulletinsUploadDir }}/{{ user.bulletins }}">Ouvrir</a></td>
+                {% else %}
+                    <td></td>
+                {% endif %}
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+{% block javascripts %}
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script type="application/javascript">
+        $(document).ready(function() {
+            $('#users_table').DataTable();
+        } );
+    </script>
+{% endblock %}

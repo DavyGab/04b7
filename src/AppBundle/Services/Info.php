@@ -13,5 +13,4 @@ class Info {
     public function getOffreNom($id) {
         return $this->offreNom[$id];
     }
-
 }

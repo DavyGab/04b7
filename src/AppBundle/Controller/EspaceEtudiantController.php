@@ -47,17 +47,4 @@ class EspaceEtudiantController extends Controller
         ));
     }
 
-    /**
-     * @Security("has_role('ROLE_ADMIN')")
-     */
-    public function listeAction() {
-        $repository = $this->getDoctrine()->getManager()->getRepository('AppBundle:Utilisateurs');
-        $utilisateurs = $repository->findAll();
-
-        dump($utilisateurs);
-
-        exit;
-        return new Response();
-    }
-
 }
