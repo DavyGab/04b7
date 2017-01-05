@@ -11,6 +11,7 @@
                 <table id="users_table" class="display" cellspacing="0" width="100%">
         <thead>
             <tr>
+                <th>Type</th>
                 <th>Nom</th>
                 <th>Prénom</th>
                 <th>Date</th>
@@ -28,6 +29,7 @@
         </thead>
         <tfoot>
             <tr>
+                <th>Type</th>
                 <th>Nom</th>
                 <th>Prénom</th>
                 <th>Date</th>
@@ -46,6 +48,7 @@
         <tbody>
         {% for user in users %}
             <tr>
+                <td>{% if user.type == 1 %} Lycéen {% else %} Etudiant  {% endif %}</td>
                 <td>{{ user.nom }}</td>
                 <td>{{ user.prenom }}</td>
                 <td>{{ user.created | date("d/m/Y") }}</td>

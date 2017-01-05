@@ -19,7 +19,5 @@ programmes:
     defaults: { _controller: AppBundle:Programmes:index }
 
 liste_inscrits:
-    path:     /admin/users/{type}
+    path:     /admin/users
     defaults: { _controller: AppBundle:Admin:users }
-    requirements:
-        type: |csv
