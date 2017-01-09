@@ -276,7 +276,7 @@
             $('.pt-full').removeClass('pt-full-active');
             $('.pt-sur-mesure').removeClass('pt-sur-mesure-active');
 
-            $('html, body').animate( { scrollTop: $(document).height() }, 400);
+            $('html, body').animate( { scrollTop: $('#detail-light').offset().top + $('#detail-light').height() - $(window).height() }, 400);
 
         });
         $('#btn-full').click(function() {
@@ -287,7 +287,7 @@
             $('.pt-full').addClass('pt-full-active');
             $('.pt-sur-mesure').removeClass('pt-sur-mesure-active');
 
-            $('html, body').animate( { scrollTop: $(document).height() }, 400);
+            $('html, body').animate( { scrollTop: $('#detail-full').offset().top + $('#detail-full').height() - $(window).height() }, 400);
         });
         $('#btn-sur-mesure').click(function() {
             $('#detail-light').hide();
@@ -297,7 +297,7 @@
             $('.pt-full').removeClass('pt-full-active');
             $('.pt-sur-mesure').addClass('pt-sur-mesure-active');
 
-            $('html, body').animate( { scrollTop: $(document).height() }, 400);
+            $('html, body').animate( { scrollTop: $('#detail-sur-mesure').offset().top + $('#detail-sur-mesure').height() - $(window).height() }, 400);
         });
     </script>
 {% endblock %}
