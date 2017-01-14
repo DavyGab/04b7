@@ -3903,6 +3903,6 @@ hr.prog {
 	-o-filter: grayscale(100%);
 }
 
-.arrow_down {
+#arrow_down {
 	cursor: pointer;
 }
