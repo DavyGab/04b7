@@ -17,13 +17,13 @@
             </div>
             <button class="round-toggle navbar-toggle menu-collapse-btn collapsed" data-toggle="collapse" data-target=".navMenuCollapse" data-selector="Footer"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
-        <div class="col-md-8 collapse navbar-collapse navMenuCollapse" style="float: right;">
-            <ul class="nav">
+        <div class="col-md-8 col-xs-10 collapse navbar-collapse navMenuCollapse" style="float: right;">
+            <ul class="nav navbar-nav">
                 <li data-selector="nav li" {% if app.request.get('_route') == 'presentation' %} class="active" {% endif %}><a href="{{ path('presentation') }}" data-selector="nav a">{{ "menu.presentation"|trans }}</a></li>
                 <li data-selector="nav li" {% if app.request.get('_route') == 'programmes' %} class="active" {% endif %}><a href="{{ path('programmes') }}" data-selector="nav a">{{ "menu.programmes"|trans }}</a></li>
                 <li data-selector="nav li"><a href="#" data-selector="nav a">{{ "menu.events"|trans }}</a></li>
                 <li data-selector="nav li" class="dropdown {% if app.request.get('_route') == 'espace_etudiant' or app.request.get('_route') == 'inscription' %}active{% endif %}">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">{{ "menu.inscription"|trans }}<span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ "menu.inscription"|trans }}<span class="caret"></span></a>
                     <ul class="dropdown-menu blueBackground blueBackground-home">
                         <li><a href="{{ path('inscription') }}" data-selector="nav a">{{ "home.orientation.bouton"|trans }}</a></li>
                         <li><a href="{{ path('espace_etudiant') }}" data-selector="nav a">{{ "home.etudiant.bouton"|trans }}</a></li>

@@ -135,6 +135,25 @@
         </div>
     </section>
     <div class="scroll-down">
-        <img src="{{ asset('bundles/app/images/down_arrow.png') }}" style="width: 65px">
+        <img id="arrow_down" src="{{ asset('bundles/app/images/down_arrow.png') }}" style="width: 105px">
     </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script type="application/javascript">
+        $("#arrow_down").click(function() {
+            var scroll = -1;
+            for (var i = 0; i < $('section').length; i++) {
+                if ($('section')[i].offsetTop > $(window).scrollTop() + $(window).height()/2) {
+                    scroll = i;
+                    break;
+                }
+            }
+            var section = $('section')[scroll];
+
+            $('html, body').animate({
+                scrollTop: section.offsetTop - $('nav.navbar').height()
+            }, 700);
+        });
+    </script>
 {% endblock %}

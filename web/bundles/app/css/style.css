@@ -197,7 +197,7 @@ header {
 	padding-bottom: 100px;
 }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 body {
 	text-align: center;
@@ -582,7 +582,7 @@ form.line-form.five-fields button{
 .data-list-alt .icon {
 	top:15px;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 .data-list li {
 	padding-left: 0;
@@ -1074,9 +1074,36 @@ a.panel-heading.collapsed:after {
 	border-color: #ddd;
 }
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
     .tab-content-border .data-list{
         margin:40px 0 0 0;}
+}
+
+/* Dropdown Button */
+.dropbtn {
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu {
+	display: none;
+	position: absolute;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu a {
+	display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+	display: block;
 }
 
 /*----------------------------------------------------------------------------------------
@@ -1473,7 +1500,7 @@ to {
 .dark-bg .item-list-center p {
 	opacity: 0.8;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 .item-list-right h3,
  .item-list-left h3 {
@@ -1640,7 +1667,7 @@ ul.step-left-block li:after{
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
         ul.step-left-block li{
             padding-left:0;
         }
@@ -1849,7 +1876,7 @@ ul.diagram-horizontal li span.column span{
 .color-list li:last-child{
     margin-bottom:0;
 }
- @media (max-width: 992px) {
+ @media (max-width: 991px) {
      ul.diagram li span.column span{
          text-indent:-1000px;
      }
@@ -1888,7 +1915,7 @@ img.full-width {
 	width: 100%;
 	height: auto;
 }
- @media (max-width: 992px) {
+ @media (max-width: 991px) {
 
 .container-half-right,
  .container-half-left {
@@ -2038,6 +2065,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 	letter-spacing: 0.05em;
 	font-weight: bolder;
 	cursor: pointer;
+	text-align: center;
 }
 @media (max-width: 1260px) {
 	.navbar .nav li a {
@@ -2111,7 +2139,7 @@ nav.navbar-slide.navbar-transparent:not(.show-menu) {
 .navbar-fixed-top {
 	border-width: 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 nav .container {
 	width: 100%;
@@ -2159,7 +2187,7 @@ nav.navbar .container {
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.navbar .nav li {
 		background-color: white;
 		color: white !important;
@@ -2167,6 +2195,11 @@ nav.navbar .container {
 	}
 	.navbar .nav li a {
 		color: black;
+		padding: 0;
+	}
+
+	.dropdown .dropdown-menu {
+		width: 100%;
 	}
 	/*.navbar .nav li:hover a,
 	.navbar .nav li.active a {
@@ -2218,7 +2251,7 @@ nav.navbar .container {
 .intro-blog-block {
 	padding: 150px 0 100px 0;
 }
- @media (max-width: 992px) {
+ @media (max-width: 991px) {
 
 .intro-block {
 	text-align: center;
@@ -2250,7 +2283,7 @@ nav.navbar .container {
 .types-block .content p{
 	margin:0;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.types-block .row > div{
 		min-height:0px;
 		padding:100px 50px 50px 50px !important;
@@ -2799,7 +2832,7 @@ footer img.logo {
 	float: left;
 	margin: 0 20px 0 0;
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 footer {
 	padding: 50px 0;
@@ -2891,7 +2924,7 @@ aside.blog-sidebar .recent-posts .post-info > * {
 .dark-bg aside.blog-sidebar .recent-posts ul li {
 	border-color: rgba(255,255,255,0.1);
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 aside.blog-sidebar {
 	margin: 50px 0 0 0;
@@ -2997,7 +3030,7 @@ aside.blog-sidebar {
 	background-color: #202229;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 	.post .post-content .price-circle{
 		top:0;
 	}
@@ -3242,7 +3275,7 @@ ul.posts-line .post .title {
 	transform: rotate(45deg);
 	-webkit-transform: rotate(45deg);
 }
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 .inner-page {
 	padding: 50px 0;
@@ -3321,7 +3354,7 @@ ul.posts-line .post .title {
 	clear: both;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
 .comment-body {
 	padding: 30px 0;
@@ -3437,7 +3470,7 @@ ul.posts-line .post .title {
 }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 .double-padding,
 .top-double-padding,
 .section-padding,
@@ -3868,4 +3901,8 @@ hr.prog {
 	-moz-filter: grayscale(100%);
 	-ms-filter: grayscale(100%);
 	-o-filter: grayscale(100%);
+}
+
+.arrow_down {
+	cursor: pointer;
 }
