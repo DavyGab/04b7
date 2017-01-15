@@ -3722,6 +3722,19 @@ hr.prog {
 	border-color: #fabe9a;
 }
 
+button#btn-light:hover {
+	border-width: 2px;
+	background: rgba(46, 109, 164, 0.13);
+}
+button#btn-full:hover {
+	border-width: 2px;
+	background-color: rgba(177, 118, 209, 0.13);
+}
+button#btn-sur-mesure:hover {
+	border-width: 2px;
+	background: rgba(250, 190, 154, 0.13);
+}
+
 .down_arrow {
 	width: 75px;
 }
