@@ -59,7 +59,7 @@ programmes:
         p4: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
         bouton: Je m'inscris !
         details:
-            plus: Plus de détails
+            plus: Sélectionner
             titre: Détails Pack light
             sousTitre: 4 ateliers la semaine en fin d'après midi et 2 ateliers le weed-end pour un total de 18h
             t1: Entretien préliminaire
@@ -87,7 +87,7 @@ programmes:
         p6: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
         bouton: Je m'inscris !
         details:
-            plus: Plus de détails
+            plus: Sélectionner
             titre: Détails Pack full
             sousTitre: 6 ateliers la semaine en fin d’après-midi et 2 ateliers le week-end pour un total de 24 heures
             t1: Entretien préliminaire
@@ -120,7 +120,7 @@ programmes:
         p5: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
         bouton: Je m'inscris !
         details:
-            plus: Plus de détails
+            plus: Sélectionner
             titre: Détails Pack Sur Mesure
             sousTitre: 4 ateliers la semaine en fin d’après-midi, 2 ateliers le week-end et jusqu’à 4 entretiens individuels à domicile
             t1: Entretiens individualisés
@@ -142,7 +142,7 @@ programmes:
 espace_etudiant:
     titre: Avec Excelience, tu as la possibilité d'être rémunéré jusqu'à 50€/h pour partager ton expérience des études après le BAC à des lycéens et à des étudiants.
     sousTitre: Aucun pré-requis n'est nécéssaire !
-    form: Remplis les champs ci-dessous et tu seras contacté dès que possible
+    form: Remplis les champs ci-dessous et tu seras contacté par notre équipe
     popup:
         titre: Ta demande d'inscription a bien été prise en compte !
         p1: Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.
@@ -152,7 +152,7 @@ espace_etudiant:
 espace_lyceen:
     titre: Je m'inscris
     sousTitre: Et je suis recontacté dans la journée pour être informé des dates disponibles
-    form: Remplis les champs ci-dessous et tu seras contacté dès que possible
+    form: Remplis les champs ci-dessous et tu seras contacté par notre équipe
     popup:
         titre: Ta demande d'inscription a bien été prise en compte !
         p1: Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.
@@ -167,3 +167,10 @@ footer:
     mail: question@excelience.fr
     contact: Contacts
     question: Une question ?
+    facebook: https://www.facebook.com/Excelience/
+    twitter: https://twitter.com/Excelience1
+    linkedin: 
+
+mentions:
+    mentions_legales: Mentions légales
+    cgv: Conditions générales de vente et d’inscription
