@@ -1,0 +1,37 @@
+{% extends "AppBundle::layout.html.twig" %}
+
+{% block body %}
+<section id="benefits-grid" data-selector="section" style="background-image: none; background-color: rgba(0, 0, 0, 0); padding-top: 100px; padding-bottom: 100px; border-bottom-width: 1px; border-bottom-color: rgb(232, 232, 232); background-repeat: repeat; background-size: auto; background-attachment: scroll;">
+    <div class="container text-center">
+        <div class="editContent" data-selector="Footer">
+            <h2 class="title blueText textSatisfy" style="font-size: 44px; background-color: rgba(0, 0, 0, 0); margin-bottom: 60px; margin-top: 0px;">{{ 'mentions.mentions_legales'|trans }}</h2>
+        </div>
+        <div class="row" style="margin-bottom: 60px;">
+            <div class="col-sm-10 col-sm-offset-1" data-selector="Footer">
+                <p data-selector="p" style="color: black; font-size: 17px; background-color: rgba(0, 0, 0, 0);">
+                    <span style="font-weight: bold; font-size: 21px;">EXCELIENCE SAS</span>
+                    <br>
+                    SAS EXCELIENCE, société par actions simplifiée au capital de 1000 €, immatriculée au RCS de Paris sous le numéro 823970819 R.C.S Paris, dont le siège social est situé au 63 bld Soult 75012 Paris
+                    <br>
+                    <br>
+                    <br>
+                    <span style="font-weight: bold; font-size: 21px;">Prestataire d’hébergement</span>
+                    <br>
+                    OVH<br>
+                    SAS au capital de 10 059 500 €<br>
+                    RCS Lille Métropole 424 761 419 00045<br>
+                    Code APE 6202A<br>
+                    N° TVA : FR 22 424 7 61 419<br>
+                    Siège social : 2 rue Kellermann - 59100 Roubaix - France.<br>
+                    <br>
+                    <br>
+                    <br>
+                    <span style="font-weight: bold; font-size: 21px;">Traitement des données à caractère personnel</span>
+                    <br>
+                    excelience.fr a fait l’objet d’une déclaration à la Commission Nationale de l’Informatique et des Libertés (CNIL) sous le n°2019417.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

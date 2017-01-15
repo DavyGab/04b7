@@ -18,6 +18,18 @@ programmes:
     path:     /programmes
     defaults: { _controller: AppBundle:Programmes:index }
 
+cgv:
+    path:     /cgv
+    defaults: { _controller: AppBundle:Mentions:CGV }
+
+mentions_legales:
+    path:     /mentions_legales
+    defaults: { _controller: AppBundle:Mentions:mentionsLegales }
+
+temoignages:
+    path:     /temoignages
+    defaults: { _controller: AppBundle:Temoignages:index }
+
 liste_inscrits:
     path:     /admin/users
     defaults: { _controller: AppBundle:Admin:users }
