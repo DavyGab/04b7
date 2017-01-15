@@ -137,6 +137,10 @@
     <div class="scroll-down">
         <img id="arrow_down" src="{{ asset('bundles/app/images/down_arrow.png') }}" style="width: 105px">
     </div>
+    <div class="scroll-arrow">
+        <img id="right_arrow_up" src="{{ asset('bundles/app/images/arrow_up.png') }}" style="width: 30px">
+        <img id="right_arrow_down" src="{{ asset('bundles/app/images/arrow_down.png') }}" style="width: 30px">
+    </div>
 {% endblock %}
 
 {% block javascripts %}
@@ -150,6 +154,35 @@
                 }
             }
             var section = $('section')[scroll];
+
+            $('html, body').animate({
+                scrollTop: section.offsetTop - $('nav.navbar').height()
+            }, 700);
+        });
+        $("#right_arrow_down").click(function() {
+            var scroll = -1;
+            for (var i = 0; i < $('section').length; i++) {
+                if ($('section')[i].offsetTop > $(window).scrollTop() + $(window).height()/2) {
+                    scroll = i;
+                    break;
+                }
+            }
+            var section = $('section')[scroll];
+
+            $('html, body').animate({
+                scrollTop: section.offsetTop - $('nav.navbar').height()
+            }, 700);
+        });
+        $("#right_arrow_up").click(function() {
+            var scroll = -1;
+            for (var i = $('section').length - 1; i > -1; i--) {
+                if ($('section')[i].offsetTop < $(window).scrollTop()) {
+                    scroll = i;
+                    break;
+                }
+            }
+            var section = $('section')[scroll];
+            console.debug(section);
 
             $('html, body').animate({
                 scrollTop: section.offsetTop - $('nav.navbar').height()

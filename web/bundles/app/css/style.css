@@ -3906,3 +3906,16 @@ hr.prog {
 #arrow_down {
 	cursor: pointer;
 }
+
+#right_arrow_up {
+	position: fixed;
+	right: 10px;
+	bottom: 45px;
+	z-index: 2;
+}
+#right_arrow_down {
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	z-index: 2;
+}
