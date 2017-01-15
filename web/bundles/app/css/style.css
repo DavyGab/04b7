@@ -3873,7 +3873,7 @@ hr.prog {
 
 .scroll-down {
 	position: fixed;
-	bottom: 35px;
+	bottom: -15px;
 	z-index: 2;
 	left: 50%;
 	transform: translate(-50%);
