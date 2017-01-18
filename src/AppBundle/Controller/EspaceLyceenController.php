@@ -27,7 +27,7 @@ class EspaceLyceenController extends Controller
             $info = $this->get('app.info');
 
             $message = \Swift_Message::newInstance()
-                ->setSubject('Confirmation d\'inscription')
+                ->setSubject('Confirmation demande d\'infos')
                 ->setFrom($this->container->getParameter('no_reply'))
                 ->setTo($utilisateur->getEmail())
                 ->setBody(

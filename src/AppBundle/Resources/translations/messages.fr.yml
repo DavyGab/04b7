@@ -24,13 +24,13 @@ presentation:
     bloc_1:
         titre: Décider pour s'orienter
         texte: Excelience te permet de décider ton orientation et d'atteindre ton objectif en bénéficiant des différentes expériences d'étudiants de grandes écoles, d'universités ou autres
-        bouton: Je m'inscris
+        bouton: Je souhaite être recontacté
     bloc_2:
         titre: "Toi aussi rejoins Excelience si :"
         p1: Tu ne sais pas où t'inscrire après le BAC
         p2: Tu ne penses pas avoir le niveau scolaire pour rejoindre la formation de tes rêves
         p3: Tu souhaites changer de voie
-        bouton: Je m'inscris
+        bouton: Je souhaite être recontacté
     bloc_3:
         titre: Rencontre des étudiants sélectionnés selon ton profil
         texte: Des étudiants qui ont vécu les mêmes difficultés que toi, ont eu les mêmes doutes et qui sont aujourd'hui dans la formation que tu souhaites rejoindre
@@ -48,7 +48,7 @@ presentation:
 
 # Page Nos Programmes
 programmes:
-    titre: Inscris toi à l'une de nos offres
+    titre: Découvre l'une de nos offres
     pack_1:
         titre: Pack light
         duree: 18 heures
@@ -57,7 +57,7 @@ programmes:
         p2: Partage d'expérience avec des jeunes diplômés
         p3: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
         p4: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
-        bouton: Je m'inscris !
+        bouton: Je souhaite être recontacté
         details:
             plus: Sélectionner
             titre: Détails Pack light
@@ -85,7 +85,7 @@ programmes:
         p4: Partage d'expérience avec des jeunes diplômés
         p5: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
         p6: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
-        bouton: Je m'inscris !
+        bouton: Je souhaite être recontacté
         details:
             plus: Sélectionner
             titre: Détails Pack full
@@ -112,13 +112,13 @@ programmes:
     pack_3:
         titre: Pack Sur Mesure
         duree: 26 heures
-        prix: 2000€
+        prix: Nous contacter
         p1: Entretiens individualisés à domicile pour un suivi personnalisé
         p2: Partage d'expérience d'étudiants présélectionnés selon ton profil
         p3: Partage d'expérience avec des jeunes diplômés
         p4: Formations aux techniques d'aide à la décision appliquées à l'enseignement supérieur
         p5: Conférence sur le site APB avec un spécialiste, concepteur de l'algorithme
-        bouton: Je m'inscris !
+        bouton: Je souhaite être recontacté
         details:
             plus: Sélectionner
             titre: Détails Pack Sur Mesure
@@ -140,7 +140,7 @@ programmes:
             p5: Conception de ta propre matrice de décision personnalisée en fonction de tes attentes de l'enseignement supérieur
 
 espace_etudiant:
-    titre: Avec Excelience, tu as la possibilité d'être rémunéré jusqu'à 50€/h pour partager ton expérience des études après le BAC à des lycéens et à des étudiants.
+    titre: Avec Excelience, tu as la possibilité d'être rémunéré pour partager ton expérience des études après le BAC à des lycéens et à des étudiants.
     sousTitre: Aucun pré-requis n'est nécéssaire !
     form: Remplis les champs ci-dessous et tu seras contacté par notre équipe
     popup:
@@ -150,12 +150,12 @@ espace_etudiant:
         bouton: Fermer
 
 espace_lyceen:
-    titre: Je m'inscris
-    sousTitre: Et je suis recontacté dans la journée pour être informé des dates disponibles
+    titre: Remplis le formulaire 
+    sousTitre: Et tu seras recontacté dans la journée pour plus d'informations 
     form: Remplis les champs ci-dessous et tu seras contacté par notre équipe
     popup:
-        titre: Ta demande d'inscription a bien été prise en compte !
-        p1: Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté pour finaliser ton inscription.
+        titre: Ta demande d'informations a bien été prise en compte !
+        p1: Un mail de confirmation vient de t’être envoyé. Tu seras par la suite contacté par notre équipe.
         p2: Pour toutes questions, contacte-nous par mail à question@excelience.fr
         bouton: Fermer
 
