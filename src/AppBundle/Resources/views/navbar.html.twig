@@ -21,7 +21,7 @@
             <ul class="nav navbar-nav">
                 <li data-selector="nav li" {% if app.request.get('_route') == 'presentation' %} class="active" {% endif %}><a href="{{ path('presentation') }}" data-selector="nav a">{{ "menu.presentation"|trans }}</a></li>
                 <li data-selector="nav li" {% if app.request.get('_route') == 'programmes' %} class="active" {% endif %}><a href="{{ path('programmes') }}" data-selector="nav a">{{ "menu.programmes"|trans }}</a></li>
-                <li data-selector="nav li"><a href="https://www.facebook.com/Excelience/" data-selector="nav a">{{ "menu.events"|trans }}</a></li>
+                <li data-selector="nav li"><a href="https://www.facebook.com/Excelience/" target=_blank data-selector="nav a">{{ "menu.events"|trans }}</a></li>
                 <li data-selector="nav li" class="dropdown {% if app.request.get('_route') == 'espace_etudiant' or app.request.get('_route') == 'inscription' %}active{% endif %}">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ "menu.inscription"|trans }}<span class="caret"></span></a>
                     <ul class="dropdown-menu blueBackground blueBackground-home">
